@@ -95,3 +95,9 @@ footer {
     padding: 10px;
     text-align: center; 
 }
+@media screen and (max-width: 900px) {
+    h1 {
+      font-size: 2rem;
+      padding: 10px;
+    }
+}
