@@ -119,7 +119,7 @@ footer {
 	content: "☰";
 }
 #menu.open::before {
-	content: "🗷";
+	content: "❌";
 }
 .open {
     display: flex;
