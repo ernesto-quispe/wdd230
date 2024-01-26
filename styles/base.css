@@ -113,7 +113,6 @@ footer {
 	position: absolute;
 	top: 5px;
 	right: 10px;
-    margin: 15px;
 }
 #menu::before {
 	content: "☰";
