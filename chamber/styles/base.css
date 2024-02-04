@@ -99,7 +99,9 @@ footer p {
 img {
   max-width: 100%;
 }
-
+p {
+  padding:10px;
+  }
 
 * {
   box-sizing: border-box;
