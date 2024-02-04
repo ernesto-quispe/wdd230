@@ -1,34 +1,10 @@
+@media screen and (min-width: 1200px) {
 
-@media screen and (min-width: 1000px)
-{
-  h1 {
-    padding-left: 50px;
-    font-size: 3rem;
-  }
-  nav {
+  .businesses {
     display: flex;
     flex-direction: row;
   }
-  #menu {
-		display: none; /* hide hamburger button */
-	}
-  
-.businesses {
-  display: flex;
-  flex-direction: row;
-}
-.business-card {
-  margin: auto;
-}
-
-.weather-join {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15px;
-}
-.weather-join-card {
-  margin: auto;
-}
-
-
+  .business-card {
+    margin: 20px;
+  }
 }

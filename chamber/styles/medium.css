@@ -1,0 +1,40 @@
+@media screen and (min-width: 800px) {
+    header,
+    nav {
+      max-width: 90%;
+      display: flex;
+      flex-direction: row;
+    }
+    #menu {
+      display: none; /* hide hamburger button */
+    }
+  
+    .businesses {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    #cencosud {
+        grid-column:1/3;
+    }
+        
+
+    .business-card {
+      margin: auto;
+    }
+    .weather-join {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+    }
+    .weather-join-card {
+      margin: auto;
+    }
+    main {
+      max-width: 90%;
+    }
+    .business-card {
+      margin: 20px;
+    }
+    
+  }
+  

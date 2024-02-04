@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      property="og:title"
-      content="Santiago Chamber of Commerce"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="images/pexels-alisha-lubben-2017747.jpg"
-    />
-    <meta
-      property="og:url"
-      content="https://ernesto-quispe.github.io/wdd230/chamber"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Santiago Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ernesto-quispe.github.io/wdd230/chamber/images/pexels-alisha-lubben-2017747.jpg">
+    <meta property="og:url" content="https://ernesto-quispe.github.io/wdd230/chamber">
     <title>Santiago Chamber of Commerce</title>
-    <meta
-      name="description"
-      content="Ernesto Quispe | WDD 230 - Webfrontend Development | Santiago Chamber of Commerce Web Page."
-    />
-    <meta name="author" content="Ernesto Quispe" />
-    <link rel="icon" href="images/ccs.ico" />
+    <meta name="description" content="Ernesto Quispe | WDD 230 - Webfrontend Development | Santiago Chamber of Commerce Web Page.">
+    <meta name="author" content="Ernesto Quispe">
+    <link rel="icon" href="images/ccs.ico">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/normalize-ernesto.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize-ernesto.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
   </head>
 
   <body>
-    <button id="menu" aria-label="menu button"></button>
-    <nav class="navigation">
-      <img src="images/ccs-image.png" alt="" />
-      <a href="#" class="active">Home</a>
-      <a href="#">Discover</a>
-      <a href="#">Directory</a>
-      <a href="#">Contact Us</a>
-    </nav>
+    <header>
+      <img src="images/ccs-image.png" alt="CCS Logo">
+      <button id="menu" aria-label="menu button"></button>
+      <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="#">Discover</a>
+        <a href="#">Directory</a>
+        <a href="#">Contact Us</a>
+      </nav>  
+    </header>
 
     <main>
       <!-- Slideshow container -->
@@ -49,32 +39,32 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 4</div>
-          <img src="images/rsz_1rsz_1rsz_4pexels-alisha-lubben-2017747.jpg" />
+          <img src="images/rsz_1rsz_1rsz_4pexels-alisha-lubben-2017747.jpg" alt="Banner Hero Santiago Chile">
           <div class="text">Santiago Chile</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 4</div>
-          <img src="images/banner-home.jpg" />
+          <img src="images/banner-home.jpg" alt="Banner Home">
           <div class="text">CencoSud</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 4</div>
-          <img src="images/banner-home-licanten2024.jpg" />
+          <img src="images/banner-home-licanten2024.jpg" alt="Banner Licanten2024">
           <div class="text">Asmar</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">4 / 4</div>
-          <img src="images/BannerWeb-beneficios2024.jpg" />
+          <img src="images/BannerWeb-beneficios2024.jpg" alt="Banner Beneficios">
           <div class="text">Banco Ripley</div>
         </div>
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <br />
+      <br>
 
       <!-- The dots/circles -->
       <div style="text-align: center">
@@ -83,7 +73,7 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
       </div>
-
+      <h1>SANTIAGO CHAMBER OF COMMERCE</h1>
       <section class="hero-banner">
         <h2>WHO WE ARE</h2>
         <p>
@@ -99,7 +89,7 @@
 
       <div class="businesses">
         <section class="business-card">
-          <img src="images/rsz_logo_ripley.png" alt="" />
+          <img src="images/rsz_rsz_logo_ripley.png" alt="Ripley Logo">
           <h3>Ripley</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -112,7 +102,7 @@
           </p>
         </section>
         <section class="business-card">
-          <img src="images/rsz_falabella_logo_png1.png" alt="" />
+          <img src="images/rsz_1rsz_falabella_logo_png1.png" alt="Falabella Logo">
           <h3>Falabella</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -124,8 +114,8 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </p>          
         </section>
-        <section class="business-card">
-          <img src="images/rsz_2560px-cencosud_logosvg.png" alt="" />
+        <section id="cencosud" class="business-card">
+          <img src="images/rsz_rsz_2560px-cencosud_logosvg.png" alt="Cencosud Logo">
           <h3>Cencosud</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -141,10 +131,16 @@
 
       <div class="weather-join">
         <section class="weather-join-card">
-          <img src="https://placehold.co/300x200/png" alt="" />
+          <h3>
+            Weather
+          </h3>
+          <img src="https://placehold.co/300x200/png" alt="Place Holder for weathe rinformation">
         </section>
         <section class="weather-join-card">
-          <img src="https://placehold.co/300x200/png" alt="" />
+          <h3>
+            Join Us
+          </h3>
+          <img src="https://placehold.co/300x200/png" alt="Place holder for join us button">
         </section>
       </div>
     </main>
