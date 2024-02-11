@@ -23,7 +23,7 @@ h1 {
 }
 header {
   background-color: #2242AE;
-  margin: auto;
+  margin: 0; /**/
   padding: 0;
 }
 
@@ -36,6 +36,7 @@ nav {
   text-align: center;
 }
 nav a {
+  display: none; /**/
   color: #FCFCFF;
   padding: 10px;
   text-decoration: none;
