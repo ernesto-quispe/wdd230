@@ -23,14 +23,14 @@ h1 {
 }
 header {
   background-color: #2242AE;
-  margin: 0; /**/
+  margin: auto; /**/
   padding: 0;
 }
 
 nav {
   display: none;
   background-color: #2242AE;
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding: 10px;
   text-align: center;
