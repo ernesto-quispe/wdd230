@@ -127,4 +127,36 @@ footer {
 .active::before {
 	content: "📖";  
 }
+.hero {
+	margin: 10px auto;
+	position: relative;
+}
+.hero img {
+	width: 100%;
+    height:auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(200, 54, 54, 0.5);;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #961a35);
+	/* border: 1px solid rgba(0,0,0,.75); */
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+    border-radius: 10px;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+	font-family:"Roboto", serif;
+}
 

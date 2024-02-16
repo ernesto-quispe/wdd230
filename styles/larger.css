@@ -18,5 +18,8 @@
   #menu {
 		display: none; /* hide hamburger button */
 	}
+  .hero {
+    grid-column: 1/3;
+  }
 
 }
