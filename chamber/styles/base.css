@@ -280,3 +280,24 @@ input:checked + .slider:before {
 #menu.dark-menu::before {
   background-color: #f2f2f2;
 }
+.hero {
+	margin: 10px auto;
+	position: relative;
+}
+.hero img {
+	width: 100%;
+  height:auto;
+  border-radius: 10px;
+}
+.weatherDiv {
+  width: 300px;
+  height: 200px; 
+  border-style: solid; 
+  margin: auto;
+}
+/* .weather-join-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+} */
