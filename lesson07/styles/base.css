@@ -7,6 +7,7 @@ body, main, header, footer{
 img{
     box-shadow: 5px 5px 5px rgb(200,200,200);
     margin:25px;
+    border-radius: 5px;
 }
 
 footer p, h1{
