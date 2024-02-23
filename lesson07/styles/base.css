@@ -8,10 +8,28 @@ img{
     box-shadow: 5px 5px 5px rgb(200,200,200);
     margin:25px;
     border-radius: 5px;
+    background: #000;
+    animation: fade 10s;
 }
-
+footer {
+    background-color: #1C1C1C;    
+    color: #1CD1C5;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center; 
+}
 footer p, h1{
     max-width:800px;
     text-align: center;
     margin:auto;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
 }
