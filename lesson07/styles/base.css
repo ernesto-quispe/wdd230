@@ -1,0 +1,16 @@
+body, main, header, footer{
+    max-width:800px;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+img{
+    box-shadow: 5px 5px 5px rgb(200,200,200);
+    margin:25px;
+}
+
+footer p, h1{
+    max-width:800px;
+    text-align: center;
+    margin:auto;
+}
