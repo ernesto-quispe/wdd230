@@ -301,3 +301,71 @@ input:checked + .slider:before {
   justify-content: center;
 
 } */
+/**  Discover Page **/
+ .discover-img {
+  max-width: 400px;
+  padding: 5px;
+  margin: auto; 
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+  background-color: #4952F7;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.discover-img h3 {
+  width: 100%;
+  margin: 0;
+}
+.image {
+  display: block;
+  /* width: 100%; */
+  /* height: auto; */
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2242AE;
+}
+
+/* .discover-img:hover .overlay {
+  opacity: 1;
+} */
+
+.text {
+  color: #FCFCFF;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.history, .event-card, .training-card, .news{
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #4952F7;
+  margin-bottom: 10px;
+}
+.discover-main h1 {
+  background-color: #4952F7;
+  color: #FCFCFF;
+  margin: 0;
+  padding: 10px;
+}
+.left-column img {
+  width: 100%;
+  height: auto;
+}
+.history {
+  margin-top: 10px;
+}

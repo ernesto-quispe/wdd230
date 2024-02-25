@@ -43,5 +43,23 @@
       right: 5vw;
       top: 35px;
     }
+   /** Discover.html **/
+    .discover-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 10px;
+    }
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+    }
+    .history {
+      margin-top: 0;
+    }
+    .discover-img:hover .overlay {
+      opacity: 1;
+    } 
+
   }
   
