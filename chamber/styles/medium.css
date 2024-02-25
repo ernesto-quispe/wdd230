@@ -47,6 +47,7 @@
     .discover-main {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
       padding: 10px;
     }
     .right-column {
@@ -60,6 +61,9 @@
     .discover-img:hover .overlay {
       opacity: 1;
     } 
+    .discover-main h1 {
+      grid-column: 1/3;
+    }
 
   }
   

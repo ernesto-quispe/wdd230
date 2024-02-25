@@ -19,7 +19,6 @@ h1 {
   font-size: 2rem;
   padding: 10px;
   color: #2242AE;
-
 }
 header {
   background-color: #2242AE;
@@ -356,12 +355,12 @@ input:checked + .slider:before {
   border-color: #4952F7;
   margin-bottom: 10px;
 }
-.discover-main h1 {
+/* .discover-main h1 {
   background-color: #4952F7;
   color: #FCFCFF;
   margin: 0;
   padding: 10px;
-}
+} */
 .left-column img {
   width: 100%;
   height: auto;
