@@ -1,6 +1,13 @@
 :root {
   --heading-font: "Roboto", Lora, "Times New Roman";
   --paragraph-font: Balsamiq Sans, Helvetica, sans-serif;
+  --bg-color: #e2e2e2;
+  --textfield-bg-color: #0a2463;
+  --main-txt-color: #ffffff;
+  --accent-color1: #fffacc;
+  --accent-color2: #4952F7;
+  --accent-color3: #605f5e;
+  --accent-color4: #000000;
 }
 h1,
 h2,
@@ -272,10 +279,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.dark{
-  background-color: #000;
-  color:#fff;
-}
 #menu.dark-menu::before {
   background-color: #f2f2f2;
 }
@@ -367,4 +370,96 @@ input:checked + .slider:before {
 }
 .history {
   margin-top: 10px;
+}
+
+/*----------------------------------- FORM -----------------------------------*/
+form fieldset {
+  border: 1px solid var(--accent-color3);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: var(--accent-color4);
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px var(--accent-color3);
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 95%;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.5rem;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: var(--accent-color2);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 1% 1% 2rem 1%;
+  width: 98%;
+}
+
+form label.top input:required {
+  border-bottom: solid 4px red;
+}
+form label.top input:required:valid {
+  border-bottom: solid 4px green;
+}
+.memberlevel {
+  max-width: 35%;
+  min-width: 8rem;
+  text-align: center;
+  display: none;
+  border: 1px solid var(--accent-color3);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+  background-color: rgb(239, 243, 248);  
+}
+.memberlevel p {
+  padding: 0 0.5rem 0 0.5rem;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+}
+#membershipGrid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 10px;
+}
+#npRadio,#bronzeRadio,#silverRadio,#goldRadio{
+  grid-column:1;
+}
+#npBenefits, #bronzeBenefits, #silverBenefits, #goldBenefits{
+  grid-column:2;
+  grid-row:1/6;
+}
+#npRadio:hover ~ #npBenefits,
+#bronzeRadio:hover ~ #bronzeBenefits,
+#silverRadio:hover ~ #silverBenefits,
+#goldRadio:hover ~ #goldBenefits
+ {
+  display: block;
+} 
+.dark{
+  background-color: #000;
+  color:#fff;
 }
