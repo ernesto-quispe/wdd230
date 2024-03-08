@@ -6,7 +6,7 @@ const membersURL = "https://ernesto-quispe.github.io/wdd230/chamber/data/members
 async function getMembers(membersURL) {
   const response = await fetch(membersURL);
   const data = await response.json();
-  displayLinks(data);
+  displayMembers(data);
 }
 
 
@@ -14,19 +14,20 @@ function displayMembers(data) {
     const container = document.querySelector('#directory-list');
     container.innerHTML = ''; // Clear existing content
   
-    data.businesses.forEach(business => {
+    data.members.forEach(business => {
       const card = document.createElement('section');
       card.classList.add('card');
   
-      const logo = document.createElement('img');
-      logo.setAttribute('src', business.logoname);
-      logo.setAttribute('alt', business.name)
-      card.appendChild(logo);
-  
+
       const name = document.createElement('h3');
       name.textContent = business.name;
       card.appendChild(name);
+      const logo = document.createElement('img');
+      logo.setAttribute('src', `images/directory/${business.icon}`);
+      logo.setAttribute('alt', business.name)
+      card.appendChild(logo);
   
+
       const owner = document.createElement('p');
       owner.textContent = 'Owner: ' + business.owner;
       card.appendChild(owner);
@@ -56,5 +57,5 @@ function displayMembers(data) {
     });
   }
   
-  getMembers('members.json'); // Replace 'members.json' with the path to your JSON file
+  getMembers(membersURL); // Replace 'members.json' with the path to your JSON file
   
