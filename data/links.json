@@ -30,15 +30,15 @@
         "lesson": "03",
         "links": [
           {
-            "url": "CSS-Psuedo-Elements",
+            "url": "https://codepen.io/ernesto-quispe-the-lessful/pen/JjzOdMR",
             "title": "CSS Psuedo Elements"
           },
           {
-            "url": "Hamburger-Menu",
-            "title": "\"Hamburger\" Menu"
+            "url": "https://codepen.io/ernesto-quispe-the-lessful/pen/MWxOwBg",
+            "title": "Menu"
           },
           {
-            "url": "CssCombinators.png",
+            "url": "images/CssCombinators.png",
             "title": "CSS Combinators"
           },
           {
@@ -51,7 +51,7 @@
         "lesson": "04",
         "links": [
           {
-            "url": "CSS-Pseudo-Classes",
+            "url": "https://codepen.io/ernesto-quispe-the-lessful/pen/vYPRKrW",
             "title": "CSS Pseudo-Classes"
           },
           {
