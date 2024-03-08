@@ -23,10 +23,7 @@ function displayLinks(lessons) {
     let weekTitle = document.createElement("h4")
     weekTitle.textContent = week
     li.appendChild(weekTitle);
-    console.log(week);
     const links = lesson.links;
-    console.log(links);
-
     links.forEach((link,index,arr) => {
 
       let a = document.createElement("a");
