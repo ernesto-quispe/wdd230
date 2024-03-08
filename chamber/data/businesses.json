@@ -1,0 +1,103 @@
+{
+    "businesses": [
+      {
+        "name": "Achs",
+        "founded": "15 November 1985",
+        "address": "Av. Libertador Bernardo O'Higgins 1465, Santiago",
+        "telephone": "+56286123456",
+        "url": "https://www.Achs.cl",
+        "icon": "achs.webp",
+        "membership": "bronze"
+      },
+      {
+        "name": "Apply Digital",
+        "founded": "7 August 2019",
+        "address": "Av. Apoquindo 6410, Las Condes",
+        "telephone": "+56281234567",
+        "url": "https://www.ApplyDigital.cl",
+        "icon": "applyDigital.webp",
+        "membership": "silver"
+      },
+      {
+        "name": "Connectif",
+        "founded": "3 June 2005",
+        "address": "Av. Andrés Bello 2425, Providencia",
+        "telephone": "+56285678901",
+        "url": "https://www.Connectif.cl",
+        "icon": "connectif.webp",
+        "membership": "gold"
+      },
+      {
+        "name": "EIT",
+        "founded": "12 September 1978",
+        "address": "Av. Libertador Bernardo O'Higgins 1449, Santiago",
+        "telephone": "+56281234567",
+        "url": "https://www.EIT.cl",
+        "icon": "eit.webp",
+        "membership": "nonprofit"
+      },
+      {
+        "name": "JLL",
+        "founded": "20 March 1960",
+        "address": "Av. El Golf 40, Las Condes",
+        "telephone": "+56281020304",
+        "url": "https://www.JLL.cl",
+        "icon": "jll.webp",
+        "membership": "bronze"
+      },
+      {
+        "name": "Pacific Logistics",
+        "founded": "25 July 1999",
+        "address": "Av. Vitacura 2939, Vitacura",
+        "telephone": "+56282838485",
+        "url": "https://www.PacificLogistics.cl",
+        "icon": "pacificLogistics.webp",
+        "membership": "silver"
+      },
+      {
+        "name": "Pago de Facturas",
+        "founded": "9 December 2010",
+        "address": "Av. Providencia 1234, Providencia",
+        "telephone": "+56283030394",
+        "url": "https://www.PagoDeFacturas.cl",
+        "icon": "pagoDeFacturas.webp",
+        "membership": "gold"
+      },
+      {
+        "name": "Simma",
+        "founded": "6 October 1982",
+        "address": "Av. Kennedy 5454, Las Condes",
+        "telephone": "+56287575757",
+        "url": "https://www.Simma.cl",
+        "icon": "simma.webp",
+        "membership": "nonprofit"
+      },
+      {
+        "name": "Sky Airlines",
+        "founded": "29 November 2003",
+        "address": "Arturo Merino Benítez International Airport, Pudahuel",
+        "telephone": "+56282818191",
+        "url": "https://www.SkyAirlines.cl",
+        "icon": "skyAirlines.webp",
+        "membership": "bronze"
+      },
+      {
+        "name": "Straub",
+        "founded": "4 April 1989",
+        "address": "Av. Andrés Bello 2210, Providencia",
+        "telephone": "+56287171717",
+        "url": "https://www.Straub.cl",
+        "icon": "straub.webp",
+        "membership": "silver"
+      },
+      {
+        "name": "Vtex",
+        "founded": "18 May 1996",
+        "address": "Cerro Colorado 5240, Las Condes",
+        "telephone": "+56285464646",
+        "url": "https://www.Vtex.cl",
+        "icon": "vtex.webp",
+        "membership": "gold"
+      }
+    ]
+  }
