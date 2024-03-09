@@ -15,7 +15,7 @@
         "address": "Av. Apoquindo 6410, Las Condes",
         "telephone": "+56281234567",
         "url": "https://www.ApplyDigital.cl",
-        "icon": "applyDigital.webp",
+        "icon": "applydigital.webp",
         "membership": "silver"
       },
       {
@@ -51,7 +51,7 @@
         "address": "Av. Vitacura 2939, Vitacura",
         "telephone": "+56282838485",
         "url": "https://www.PacificLogistics.cl",
-        "icon": "pacificLogistics.webp",
+        "icon": "pacificlogistics.webp",
         "membership": "silver"
       },
       {
@@ -60,7 +60,7 @@
         "address": "Av. Providencia 1234, Providencia",
         "telephone": "+56283030394",
         "url": "https://www.PagoDeFacturas.cl",
-        "icon": "pagoDeFacturas.webp",
+        "icon": "pagodefacturas.webp",
         "membership": "gold"
       },
       {
@@ -78,7 +78,7 @@
         "address": "Arturo Merino Benítez International Airport, Pudahuel",
         "telephone": "+56282818191",
         "url": "https://www.SkyAirlines.cl",
-        "icon": "skyAirlines.webp",
+        "icon": "skyairlines.webp",
         "membership": "bronze"
       },
       {
