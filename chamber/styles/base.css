@@ -416,10 +416,10 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-  border-bottom: solid 4px red;
+  border-left: solid 4px red;
 }
 form label.top input:required:valid {
-  border-bottom: solid 4px green;
+  border-left: solid 4px green;
 }
 .memberlevel {
   max-width: 35%;
@@ -464,12 +464,6 @@ input[type="radio"] {
   color:#fff;
 }
 /*----------------------------------- Directory -----------------------------------*/
-/* #directory-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 10px;
-  margin-bottom: 10px;
-} */
 .member-card {
   border-style: solid;
   border-color: var(--accent-color2);
