@@ -2,7 +2,7 @@
     "members": [
       {
         "name": "Achs",
-        "founded": "15 November 1985",
+        "founded": "15 Nov 1985",
         "address": "Av. Libertador Bernardo O'Higgins 1465, Santiago",
         "telephone": "+56286123456",
         "url": "https://www.Achs.cl",
@@ -11,93 +11,102 @@
       },
       {
         "name": "Apply Digital",
-        "founded": "7 August 2019",
+        "founded": "7 Aug 2019",
         "address": "Av. Apoquindo 6410, Las Condes",
         "telephone": "+56281234567",
-        "url": "https://www.ApplyDigital.cl",
+        "url": "https://www.applydigital.com",
         "icon": "applydigital.webp",
-        "membership": "silver"
+        "membership": "Silver"
       },
       {
         "name": "Connectif",
-        "founded": "3 June 2005",
+        "founded": "3 Jun 2005",
         "address": "Av. Andrés Bello 2425, Providencia",
         "telephone": "+56285678901",
-        "url": "https://www.Connectif.cl",
+        "url": "https://connectif.ai/",
         "icon": "connectif.webp",
-        "membership": "gold"
+        "membership": "Gold"
       },
       {
         "name": "EIT",
-        "founded": "12 September 1978",
+        "founded": "12 Sep 1978",
         "address": "Av. Libertador Bernardo O'Higgins 1449, Santiago",
         "telephone": "+56281234567",
         "url": "https://www.EIT.cl",
         "icon": "eit.webp",
-        "membership": "nonprofit"
+        "membership": "Non Profit"
       },
       {
         "name": "JLL",
-        "founded": "20 March 1960",
+        "founded": "20 Mar 1960",
         "address": "Av. El Golf 40, Las Condes",
         "telephone": "+56281020304",
         "url": "https://www.JLL.cl",
         "icon": "JLL.webp",
-        "membership": "bronze"
+        "membership": "Bronze"
       },
       {
         "name": "Pacific Logistics",
-        "founded": "25 July 1999",
+        "founded": "25 Jul 1999",
         "address": "Av. Vitacura 2939, Vitacura",
         "telephone": "+56282838485",
-        "url": "https://www.PacificLogistics.cl",
+        "url": "https://web.splogistics.com/",
         "icon": "PacificLogistics.webp",
-        "membership": "silver"
+        "membership": "Silver"
       },
       {
         "name": "Pago de Facturas",
-        "founded": "9 December 2010",
+        "founded": "9 Dec 2010",
         "address": "Av. Providencia 1234, Providencia",
         "telephone": "+56283030394",
-        "url": "https://www.PagoDeFacturas.cl",
+        "url": "https://www.webfactura.cl",
         "icon": "pagodefacturas.webp",
-        "membership": "gold"
+        "membership": "Gold"
       },
       {
         "name": "Simma",
-        "founded": "6 October 1982",
+        "founded": "6 Oct 1982",
         "address": "Av. Kennedy 5454, Las Condes",
         "telephone": "+56287575757",
         "url": "https://www.Simma.cl",
         "icon": "simma.webp",
-        "membership": "nonprofit"
+        "membership": "Non Profit"
       },
       {
         "name": "Sky Airlines",
-        "founded": "29 November 2003",
+        "founded": "29 Nov 2003",
         "address": "Arturo Merino Benítez International Airport, Pudahuel",
         "telephone": "+56282818191",
-        "url": "https://www.SkyAirlines.cl",
+        "url": "https://www.skyairline.com/chile",
         "icon": "skyairlines.webp",
-        "membership": "bronze"
+        "membership": "Bronze"
       },
       {
         "name": "Straub",
-        "founded": "4 April 1989",
+        "founded": "4 Apr 1989",
         "address": "Av. Andrés Bello 2210, Providencia",
         "telephone": "+56287171717",
-        "url": "https://www.Straub.cl",
+        "url": "https://www.kmx.cl",
         "icon": "straub.webp",
-        "membership": "silver"
+        "membership": "Silver"
       },
       {
         "name": "Vtex",
         "founded": "18 May 1996",
         "address": "Cerro Colorado 5240, Las Condes",
         "telephone": "+56285464646",
-        "url": "https://www.Vtex.cl",
+        "url": "https://vtex.com",
         "icon": "vtex.webp",
-        "membership": "gold"
+        "membership": "Gold"
+      },
+      {
+        "name": "Alto Las Condes",
+        "founded": "23 Dec 1805",
+        "address": "Av. Pdte. Kennedy Lateral 9001, Las Condes",
+        "telephone": "+56968992980",
+        "url": "https://www.altolascondes.cl/",
+        "icon": "altolascondes-logo.webp",
+        "membership": "Silver"
       }
     ]
   }

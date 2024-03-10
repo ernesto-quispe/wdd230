@@ -463,3 +463,84 @@ input[type="radio"] {
   background-color: #000;
   color:#fff;
 }
+/*----------------------------------- Directory -----------------------------------*/
+/* #directory-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+} */
+.member-card {
+  border-style: solid;
+  border-color: var(--accent-color2);
+}
+.member-card p {
+  margin: 0;
+  padding: 3px;
+}
+.member-card img {
+  margin: 10px;
+}
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	text-align: center;
+}
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+
+
+
+.grid {
+	display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	margin: 0;
+	padding: 0;
+  text-align: left;
+  align-items: center;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+  margin: 0;
+  background-color: transparent;
+  color: #000;
+}
+.list section:nth-child(even) {
+	background-color: lightcyan;
+  border-top: 0;
+  border-bottom:0;
+}
