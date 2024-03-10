@@ -79,6 +79,11 @@
     .list section{
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-
+    .menu {
+      align-items: center;
+    }
+    .menu h1 {
+      margin: 0;
+    }
   }
   
