@@ -486,8 +486,6 @@ input[type="radio"] {
 }
 
 
-
-
 .grid {
 	display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -523,7 +521,7 @@ input[type="radio"] {
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none; 
 }
 
 .list section h3 {
