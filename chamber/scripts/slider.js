@@ -6,6 +6,7 @@ const nav = document.querySelector("nav");
 const menu = document.querySelector("#menu");
 const footer = document.querySelector("footer");
 const h1 = document.querySelector("h1");
+const banner = document.querySelector("#meetbanner p");
 
 checkbox.addEventListener('change', function() {
 
@@ -15,4 +16,5 @@ checkbox.addEventListener('change', function() {
     menu.classList.toggle('dark-menu');
     footer.classList.toggle('dark');
     h1.classList.toggle('dark');
+    banner.classList.toggle('dark');
   });
