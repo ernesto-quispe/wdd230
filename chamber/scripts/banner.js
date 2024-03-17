@@ -1,7 +1,7 @@
 const now = new Date();
 
 let day = now.getDay();
-day = 2;
+//day = 2;
 
 if (day === 1 || day === 2 || day === 3) {
 
