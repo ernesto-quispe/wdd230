@@ -426,7 +426,7 @@ margin: 0;
   text-align: center;
 }
 
-.button-join button {
+.button-join span {
   padding: 10px;
   font-size: 1rem; 
   background-color: #2242AE;
@@ -438,7 +438,7 @@ margin: 0;
   z-index: 1;
 }
 
- .button-join button:hover {
+ .button-join span:hover {
   background-color: var(--accent-color2);
 } 
 /*----------------------------------- FORM -----------------------------------*/
