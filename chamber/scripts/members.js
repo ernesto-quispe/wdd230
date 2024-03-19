@@ -46,6 +46,7 @@ function displayMembers(data) {
       link.href = business.url;
       link.textContent = 'Visit Website';
       link.setAttribute('target', '_blank')
+      link.classList.add('member-card-link');
       card.appendChild(link);
   
       container.appendChild(card);

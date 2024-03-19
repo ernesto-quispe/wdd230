@@ -292,11 +292,11 @@ input:checked + .slider:before {
   color: var(--main-txt-color);
   font-size: 1.5rem;
   margin: 0;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 #meetbanner p {
-  margin: 0;
-  display: inline;
+  /*display: inline;*/
+  margin:0;
 }
 .hero {
 	margin: 10px auto;
@@ -349,6 +349,9 @@ margin: 0;
   justify-content: center;
 
 } */
+
+
+
 /**  Discover Page **/
  .discover-img {
   max-width: 400px;
@@ -404,12 +407,10 @@ margin: 0;
   border-color: #4952F7;
   margin-bottom: 10px;
 }
-/* .discover-main h1 {
-  background-color: #4952F7;
-  color: #FCFCFF;
-  margin: 0;
-  padding: 10px;
-} */
+ .discover-main h1 {
+  margin:0;
+  padding:30px;
+} 
 .left-column img {
   width: 100%;
   height: auto;
@@ -442,13 +443,17 @@ margin: 0;
   background-color: var(--accent-color2);
 } 
 /*----------------------------------- FORM -----------------------------------*/
+.joinus-body h1{
+  margin:0;
+  padding:30px;
+}
 form fieldset {
   border: 1px solid var(--accent-color3);
   border-radius: 10px;
   padding: 0.5rem 2%;
 }
 
-form label.top,
+.top,
 form div {
   display: block;
   padding-top: 1rem;
@@ -532,6 +537,7 @@ input[type="radio"] {
   background-color: #000;
   color:#fff;
 }
+
 /*----------------------------------- Directory -----------------------------------*/
 .member-card {
   border-style: solid;
@@ -545,16 +551,22 @@ input[type="radio"] {
   margin: 10px;
 }
 .menu {
-	margin: 1rem auto;
-	padding: 0.5rem;
+  margin:0;
+  padding:15px;
 	text-align: center;
 }
 .menu button {
 	padding: 1rem;
 	font-weight: 700;
 }
-
-
+.dark-link {
+  text-decoration: none;
+  color: #fff;
+}
+.dark-link:visited {
+  text-decoration: none;
+  color: #fff;
+}
 .grid {
 	display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
