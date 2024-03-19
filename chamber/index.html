@@ -1,201 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Santiago Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ernesto-quispe.github.io/wdd230/chamber/images/pexels-alisha-lubben-2017747.jpg">
-    <meta property="og:url" content="https://ernesto-quispe.github.io/wdd230/chamber">
-    <title>Santiago Chamber of Commerce</title>
-    <meta name="description" content="Ernesto Quispe | WDD 230 - Webfrontend Development | Santiago Chamber of Commerce Web Page.">
-    <meta name="author" content="Ernesto Quispe">
-    <link rel="icon" href="images/ccs.ico">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
-  </head>
 
-  <body>
-    <header>
-      <img src="images/ccs-image.webp" alt="CCS Logo">
-      <button id="menu" aria-label="menu button"></button>
-      <!-- Rounded switch -->
-      <label class="switch">
-        <input type="checkbox" id="toggleCheckbox">
-        <span class="slider round"></span>
-      </label>      
-      <nav class="navigation">
-        <a href="index.html" class="navLinks active">Home</a>
-        <a href="discover.html" class="navLinks">Discover</a>
-        <a href="directory.html" class="navLinks">Directory</a>
-        <a href="join.html" class="navLinks">Join</a>
-      </nav>
-    </header>
-    <main>
-      <div id="meetbanner" class="displayed">
-        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. </p>
-        <span id="close-banner">❌</span>
-      </div>
-      <!-- <div class="hero">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Santiago Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://ernesto-quispe.github.io/wdd230/chamber/images/pexels-alisha-lubben-2017747.jpg">
+  <meta property="og:url" content="https://ernesto-quispe.github.io/wdd230/chamber">
+  <title>Santiago Chamber of Commerce</title>
+  <meta name="description"
+    content="Ernesto Quispe | WDD 230 - Webfrontend Development | Santiago Chamber of Commerce Web Page.">
+  <meta name="author" content="Ernesto Quispe">
+  <link rel="icon" href="images/ccs.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/ccs-image.webp" alt="CCS Logo">
+    <button id="menu" aria-label="menu button"></button>
+    <!-- Rounded switch -->
+    <label class="switch">
+      <input type="checkbox" id="toggleCheckbox">
+      <span class="slider round"></span>
+    </label>
+    <nav class="navigation">
+      <a href="index.html" class="navLinks active">Home</a>
+      <a href="discover.html" class="navLinks">Discover</a>
+      <a href="directory.html" class="navLinks">Directory</a>
+      <a href="join.html" class="navLinks">Join</a>
+    </nav>
+  </header>
+  <main>
+    <div id="meetbanner" class="displayed">
+      <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. </p>
+      <span id="close-banner">❌</span>
+    </div>
+    <!-- <div class="hero">
         <picture>
             <source srcset="images/wdd230-org-small.webp" media="(max-width: 600px)">
             <source srcset="images/wdd230-org-medium.webp" media="(max-width: 800px)">
             <img src="images/wdd230-org-large.webp" alt="Hero Image" width="800" height="533">
         </picture>
      </div> -->
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
-          <img src="images/rsz_1rsz_1rsz_4pexels-alisha-lubben-2017747.webp" alt="Banner Hero Santiago Chile">
-          <!-- <div class="text">Santiago Chile</div> -->
-        </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
-          <img src="images/banner-home.webp" alt="Banner Home">
-          <!-- <div class="text">CencoSud</div> -->
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <img src="images/banner-home-licanten2024.webp" alt="Banner Licanten2024">
-          <!-- <div class="text">Asmar</div> -->
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
-          <img src="images/BannerWeb-beneficios2024.webp" alt="Banner Beneficios">
-          <!-- <div class="text">Banco Ripley</div> -->
-        </div>
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/rsz_1rsz_1rsz_4pexels-alisha-lubben-2017747.webp" alt="Banner Hero Santiago Chile">
+        <!-- <div class="text">Santiago Chile</div> -->
       </div>
-      <br>
 
-      <!-- The dots/circles -->
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/banner-home.webp" alt="Banner Home">
+        <!-- <div class="text">CencoSud</div> -->
       </div>
-      <h1>Santiago Chamber of Commerce</h1>
-      <section class="hero-banner">
-        <h2>WHO WE ARE</h2>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/banner-home-licanten2024.webp" alt="Banner Licanten2024">
+        <!-- <div class="text">Asmar</div> -->
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/BannerWeb-beneficios2024.webp" alt="Banner Beneficios">
+        <!-- <div class="text">Banco Ripley</div> -->
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="button-join">
+        <a href="join.html"><button>Join the Chamber</button>
+        </a>
+      </div>
+      
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <h1>Santiago Chamber of Commerce</h1>
+    <section class="hero-banner">
+      <h2>WHO WE ARE</h2>
+      <p>
+        Welcome to the Santiago Metropolitan Chamber of Commerce, where we unite over 2,000 diverse businesses from the
+        vibrant heart of Chile. Established in 1919, our chamber stands as a beacon of support and growth for
+        enterprises large and small. We are dedicated to fostering a thriving economic environment by advocating for the
+        interests of our members and facilitating a dynamic exchange of information and services. Our extensive network,
+        including 30 sister chambers across the nation, empowers us to champion the cause of commerce with a
+        forward-thinking approach and state-of-the-art technology. Join us, and be part of shaping Santiago’s prosperous
+        future.
+      </p>
+    </section>
+
+    <div class="businesses">
+      <section class="business-card">
+        <a href="https://www.ripley.cl" target="_blank"><img src="images/rsz_rsz_logo_ripley.webp" alt="Ripley Logo"></a>
+        <h3>Ripley</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Ripley is a prominent Chilean department store chain that offers a wide range of products, including
+          technology, fashion, and home goods. Founded in 1956, it has expanded its presence to Peru and operates a
+          successful online platform.
         </p>
       </section>
-
-      <div class="businesses">
-        <section class="business-card">
-          <img src="images/rsz_rsz_logo_ripley.webp" alt="Ripley Logo">
-          <h3>Ripley</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </section>
-        <section class="business-card">
-          <img src="images/rsz_1rsz_falabella_logo_png1.webp" alt="Falabella Logo">
-          <h3>Falabella</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>          
-        </section>
-        <section id="cencosud" class="business-card">
-          <img src="images/rsz_rsz_2560px-cencosud_logosvg.webp" alt="Cencosud Logo">
-          <h3>Cencosud</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>          
-        </section>
-      </div>
-
-        <section id="weather" class="weather-join-card">
-          <h3>Weather for Today</h3>
-          <div class="weatherDiv">
-            <div id="current">
-              <h4>Current:</h4>
-              <img src="https://placehold.co/10x10" alt="placeholder" id="weather-icon">
-              <span class="currentTemp" id="current-temp"></span>
-              <span>-</span>
-              <span id="caption"></span>
-            </div>
-
-              <div>
-                  <h4>Windspeed:</h4>
-                      <span class="windSpeed">30</span>
-                      <span>MPH</span>
-                  <h4>Wind Chill:</h4>
-                      <span class="windChill"></span>
-              </div>
-              <div id="forecast">
-
-              </div>
-          </div>
+      <section class="business-card">
+        <a href="https://www.falabella.com" target="_blank"><img src="images/rsz_1rsz_falabella_logo_png1.webp" alt="Falabella Logo"></a>
+        <h3>Falabella</h3>
+        <p>
+          Falabella stands as one of Latin America’s largest and most established department stores, with a rich history
+          dating back to 1889. It boasts a vast network of stores across Chile, Peru, and Colombia, and is known for its
+          diverse product offerings and strong brand presence.
+        </p>
       </section>
+      <section id="cencosud" class="business-card">
+        <a href="https://www.cencosudshoppingcenters.com/" target="_blank"><img src="images/rsz_rsz_2560px-cencosud_logosvg.webp" alt="Cencosud Logo"></a>
+        <h3>Cencosud</h3>
+        <p>
+          Cencosud, now known as Cenco, is a retail powerhouse in Latin America, operating a variety of supermarkets,
+          home improvement stores, and shopping centers. With its roots in Chile, Cencosud has grown to serve several
+          countries, providing customers with quality products and services.
+        </p>
+      </section>
+    </div>
+
+    <section id="weather" class="weather-join-card">
+      <h3>Weather for Today</h3>
+      <div class="weatherDiv">
+        <div id="current">
+          <h4>Current:</h4>
+          <img src="https://placehold.co/10x10" alt="placeholder" id="weather-icon">
+          <span class="currentTemp" id="current-temp"></span>
+          <span>&nbsp;-&nbsp;</span>
+          <span id="caption"></span>
+        </div>
+
+        <div>
+          <h4>Windspeed:</h4>
+          <span class="windSpeed">30</span>
+          <span>MPH</span>
+          <h4>Wind Chill:</h4>
+          <span class="windChill"></span>
+        </div>
+        <div id="forecast">
+
+        </div>
+      </div>
+      <a href="https://openweathermap.org/">Information provided by OpenWeatherMap.org</a>
+
+    </section>
 
 
-        <!-- <section class="weather-join-card">
+    <!-- <section class="weather-join-card">
           <h3>
             Join Us
           </h3>
           <img src="https://placehold.co/300x200/png" alt="Place holder for join us button">
         </section> -->
-    </main>
+  </main>
 
-    <footer>
-      <p>Monjitas #392, Santiago - Chile</p>
-      <span> | </span>      
-      <p>+56 2 2360 7000</p>  
-      <span> | </span>      
-      <p>contacto@ccs.cl</p>
-      <span> | </span>      
-      <p>&copy; <span id="copywriteyear">Year </span>Ernesto Quispe - Peru</p>
-      <span> | </span>      
-      <p id="lastmod"></p>
-      <span> | </span>      
-      <p>WDD230 Proyect</p>
-    </footer>
+  <footer>
+    <p>Monjitas #392, Santiago - Chile</p>
+    <span> | </span>
+    <p>+56 2 2360 7000</p>
+    <span> | </span>
+    <p>contacto@ccs.cl</p>
+    <span> | </span>
+    <p>&copy; <span id="copywriteyear">Year </span>Ernesto Quispe - Peru</p>
+    <span> | </span>
+    <p id="lastmod"></p>
+    <span> | </span>
+    <p>WDD230 Proyect</p>
+  </footer>
 
-    <script src="../scripts/getdates.js"></script>
-    <script src="../scripts/menu.js"></script>
-    <script src="scripts/slides.js"></script>
-    <script src="scripts/slider.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/banner.js"></script>
-  </body>
+  <script src="../scripts/getdates.js"></script>
+  <script src="../scripts/menu.js"></script>
+  <script src="scripts/slides.js"></script>
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/windchill.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/banner.js"></script>
+</body>
+
 </html>

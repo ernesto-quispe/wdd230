@@ -418,6 +418,29 @@ margin: 0;
   margin-top: 10px;
 }
 
+.button-join {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button-join button {
+  padding: 10px;
+  font-size: 1rem; 
+  background-color: #2242AE;
+  color: white;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: goldenrod;
+  cursor: pointer;
+  z-index: 1;
+}
+
+ .button-join button:hover {
+  background-color: var(--accent-color2);
+} 
 /*----------------------------------- FORM -----------------------------------*/
 form fieldset {
   border: 1px solid var(--accent-color3);
