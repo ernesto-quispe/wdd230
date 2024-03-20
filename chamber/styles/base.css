@@ -537,7 +537,21 @@ input[type="radio"] {
   background-color: #000;
   color:#fff;
 }
+.dark-body{
+  background-color: grey;
+  color:#fff;
+}
 
+.dark-list{
+  color:black !important;
+}
+.dark-list:visited{
+  color:black !important;
+}
+.dark-list-h3
+{
+  color: white !important;
+}
 /*----------------------------------- Directory -----------------------------------*/
 .member-card {
   border-style: solid;
@@ -605,12 +619,18 @@ input[type="radio"] {
 	display: none; 
 }
 
-.list section h3 {
+.member-card-H3{
 	font-size: 1rem;
   margin: 0;
   background-color: transparent;
   color: #000;
 }
+/* .list section:nth-child(odd) h3 {
+	background-color: purple;
+  border-top: 0;
+  border-bottom:0;
+} */
+
 .list section:nth-child(even) {
 	background-color: lightcyan;
   border-top: 0;

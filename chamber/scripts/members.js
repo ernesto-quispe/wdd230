@@ -1,4 +1,5 @@
 const membersURL = "https://ernesto-quispe.github.io/wdd230/chamber/data/members.json";
+const checkbox = document.querySelector('#toggleCheckbox');
 
 //const membersURL = "./data/members.json";
 
@@ -19,6 +20,7 @@ function displayMembers(data) {
       
       const name = document.createElement('h3');
       name.textContent = business.name;
+      name.classList.add("member-card-H3")
       card.appendChild(name);
       const logo = document.createElement('img');
       logo.setAttribute('src', `images/directory/${business.icon}`);
@@ -60,16 +62,38 @@ function displayMembers(data) {
   const gridbutton = document.querySelector("#grid");
   const listbutton = document.querySelector("#list");
   const display = document.querySelector("#directory-list");
-  
+
   
   gridbutton.addEventListener("click", () => {
+    removeDark()
     display.classList.add("grid");
     display.classList.remove("list");
   });
   
-  listbutton.addEventListener("click", showList); 
-  
-  function showList() {
+  listbutton.addEventListener("click", () => {
+    removeDark()
     display.classList.add("list");
     display.classList.remove("grid");
-  }
+  });
+
+
+
+function removeDark(){
+      // Select all elements in the page
+      const allElements = document.querySelectorAll('*');
+
+      // Iterate over all elements and remove the 'some-class' class
+      allElements.forEach(el => el.classList.remove('dark', 'dark-menu', 'dark-body','dark-link','dark-list', 'dark-list-h3' ));
+
+
+      // if (checkbox.checked) {
+      //   // Si está marcado, aplica la transformación al elemento .slider:before
+      //   document.querySelector('.slider').style.transform = "translateX(20px)";
+      // } else {
+      //   // Si no está marcado, remueve la transformación del elemento .slider:before
+      //   document.querySelector('.slider').style.transform = "translateX(0)";
+      // }
+  
+}
+
+  

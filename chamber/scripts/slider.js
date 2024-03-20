@@ -1,18 +1,30 @@
-const main = document.querySelector("main");
-const checkbox = document.querySelector('#toggleCheckbox');
+// const checkbox = document.querySelector('#toggleCheckbox');
 
-const header = document.querySelector("header");
-const nav = document.querySelector("nav");
-const menu = document.querySelector("#menu");
-const footer = document.querySelector("footer");
-const h1 = document.querySelector("h1");
-const banner = document.querySelector("#meetbanner p");
-const formlabels = document.querySelectorAll(".top");
-const radiolabels = document.querySelectorAll(".sbs");
-const memberCardLink = document.querySelectorAll(".member-card-link");
+checkbox.addEventListener('change', toggleDark);
 
-checkbox.addEventListener('change', function() {
 
+
+function toggleDark() {
+
+  const main = document.querySelector("main");
+  const body = document.querySelector("body");
+  const header = document.querySelector("header");
+  const nav = document.querySelector("nav");
+  const menu = document.querySelector("#menu");
+  const footer = document.querySelector("footer");
+  const h1 = document.querySelector("h1");
+  const banner = document.querySelector("#meetbanner p");
+  const formlabels = document.querySelectorAll(".top");
+  const radiolabels = document.querySelectorAll(".sbs");
+  const memberCardLink = document.querySelectorAll(".member-card-link");
+  const membercards = document.querySelectorAll(".list section:nth-child(even) p, .list section:nth-child(even) a");
+  const membercardsH3 = document.querySelectorAll(".list section:nth-child(odd) .member-card-H3");
+  const membercardsH3Grid = document.querySelectorAll(".grid .member-card-H3");
+  const linkWeather = document.querySelector('.link-weather');
+
+console.log(membercards);
+
+    body.classList.toggle('dark-body');
     main.classList.toggle('dark');
     header.classList.toggle('dark');
     nav.classList.toggle('dark');
@@ -31,8 +43,17 @@ checkbox.addEventListener('change', function() {
     })
     memberCardLink.forEach((element) => {
       element.classList.toggle('dark-link');
-      console.log(element);
     })
-  
+    membercards.forEach((element) => {
+      element.classList.toggle('dark-list');
+    })
+    membercardsH3.forEach((element) => {
+      element.classList.toggle('dark-list-h3');
+    })
+    membercardsH3Grid.forEach((element) => {
+      element.classList.toggle('dark-list-h3');
+    })
 
-  });
+    linkWeather.classList.toggle('dark-link');
+
+  };
