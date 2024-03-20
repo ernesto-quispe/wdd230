@@ -1,11 +1,16 @@
-// const checkbox = document.querySelector('#toggleCheckbox');
+const checkbox = document.querySelector('#toggleCheckbox');
 
 checkbox.addEventListener('change', toggleDark);
-
-
+const slider = document.querySelector('.slider');
 
 function toggleDark() {
 
+  if(checkbox.checked) {
+    slider.classList.add('move');
+  } else {
+    slider.classList.remove('move');
+  }
+  
   const main = document.querySelector("main");
   const body = document.querySelector("body");
   const header = document.querySelector("header");
@@ -22,7 +27,6 @@ function toggleDark() {
   const membercardsH3Grid = document.querySelectorAll(".grid .member-card-H3");
   const linkWeather = document.querySelector('.link-weather');
 
-console.log(membercards);
 
     body.classList.toggle('dark-body');
     main.classList.toggle('dark');
@@ -53,7 +57,7 @@ console.log(membercards);
     membercardsH3Grid.forEach((element) => {
       element.classList.toggle('dark-list-h3');
     })
-
+    if (linkWeather){
     linkWeather.classList.toggle('dark-link');
-
+    }
   };

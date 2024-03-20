@@ -1,5 +1,5 @@
 const membersURL = "https://ernesto-quispe.github.io/wdd230/chamber/data/members.json";
-const checkbox = document.querySelector('#toggleCheckbox');
+
 
 //const membersURL = "./data/members.json";
 
@@ -86,13 +86,9 @@ function removeDark(){
       allElements.forEach(el => el.classList.remove('dark', 'dark-menu', 'dark-body','dark-link','dark-list', 'dark-list-h3' ));
 
 
-      // if (checkbox.checked) {
-      //   // Si está marcado, aplica la transformación al elemento .slider:before
-      //   document.querySelector('.slider').style.transform = "translateX(20px)";
-      // } else {
-      //   // Si no está marcado, remueve la transformación del elemento .slider:before
-      //   document.querySelector('.slider').style.transform = "translateX(0)";
-      // }
+      checkbox.checked = false; // Uncheck the checkbox
+  slider.classList.remove('move'); // Remove the 'move' class to move the slider to the "off" position
+
   
 }
 
