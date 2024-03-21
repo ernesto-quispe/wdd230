@@ -26,7 +26,7 @@ function toggleDark() {
   const membercardsH3 = document.querySelectorAll(".list section:nth-child(odd) .member-card-H3");
   const membercardsH3Grid = document.querySelectorAll(".grid .member-card-H3");
   const linkWeather = document.querySelector('.link-weather');
-
+  const memberlevel = document.querySelectorAll('.memberlevel');
 
     body.classList.toggle('dark-body');
     main.classList.toggle('dark');
@@ -56,6 +56,9 @@ function toggleDark() {
     })
     membercardsH3Grid.forEach((element) => {
       element.classList.toggle('dark-list-h3');
+    })
+    memberlevel.forEach((element) => {
+      element.classList.toggle('dark');
     })
     if (linkWeather){
     linkWeather.classList.toggle('dark-link');

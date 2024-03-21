@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preload" href="styles/base.css" as="style">
+  <link rel="preload" href="styles/medium.css" as="style">
+  <link rel="preload" href="styles/larger.css" as="style">
 </head>
 
 <body>
@@ -42,14 +45,7 @@
       <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. <span id="close-banner">❌</span></p>
       
     </div>
-    <!-- <div class="hero">
-        <picture>
-            <source srcset="images/wdd230-org-small.webp" media="(max-width: 600px)">
-            <source srcset="images/wdd230-org-medium.webp" media="(max-width: 800px)">
-            <img src="images/wdd230-org-large.webp" alt="Hero Image" width="800" height="533">
-        </picture>
-     </div> -->
-    <!-- Slideshow container -->
+
     <div class="slideshow-container">
 
       <!-- Full-width images with number and caption text -->
@@ -57,7 +53,7 @@
         <div class="numbertext">1 / 4</div>
         <!-- <img src="images/rsz_1rsz_1rsz_4pexels-alisha-lubben-2017747.webp" alt="Banner Hero Santiago Chile"> -->
         <picture>
-          <source srcset="images/santiago-400.webp" media="(max-width: 600px)">
+          <source srcset="images/santiago-400.webp" media="(max-width: 860px)">
           <img src="images/rsz_1rsz_1rsz_4pexels-alisha-lubben-2017747.webp" alt="Banner Hero Santiago Chile">
         </picture> 
         <!-- <div class="text">Santiago Chile</div> -->
@@ -67,8 +63,8 @@
         <div class="numbertext">2 / 4</div>
         <!-- <img src="images/banner-home.webp" alt="Banner Home"> -->
         <picture>
-          <source srcset="images/banner-home-400.webp" media="(max-width: 600px)">
-          <img src="images/banner-home.webp" alt="Banner Home">
+          <source srcset="images/banner-home-400.webp" media="(max-width: 860px)">
+          <img src="images/banner-home.webp" loading="lazy" alt="Banner Home">
         </picture> 
         <!-- <div class="text">CencoSud</div> -->
       </div>
@@ -77,8 +73,8 @@
         <div class="numbertext">3 / 4</div>
         <!-- <img src="images/banner-home-licanten2024.webp" alt="Banner Licanten2024"> -->
         <picture>
-          <source srcset="images/banner-home-licanten2024-400.webp" media="(max-width: 600px)">
-          <img src="images/banner-home-licanten2024.webp" alt="Banner Licanten2024">
+          <source srcset="images/banner-home-licanten2024-400.webp" media="(max-width: 860px)">
+          <img src="images/banner-home-licanten2024.webp" loading="lazy"  alt="Banner Licanten2024">
         </picture> 
         <!-- <div class="text">Asmar</div> -->
       </div>
@@ -87,8 +83,8 @@
         <div class="numbertext">4 / 4</div>
         <!-- <img src="images/BannerWeb-beneficios2024.webp" alt="Banner Beneficios"> -->
         <picture>
-          <source srcset="images/BannerWeb-beneficios2024-400.webp" media="(max-width: 600px)">
-          <img src="images/BannerWeb-beneficios2024.webp" alt="Banner Beneficios">
+          <source srcset="images/BannerWeb-beneficios2024-400.webp" media="(max-width: 860px)">
+          <img src="images/BannerWeb-beneficios2024.webp" loading="lazy" alt="Banner Beneficios">
         </picture> 
         <!-- <div class="text">Banco Ripley</div> -->
       </div>

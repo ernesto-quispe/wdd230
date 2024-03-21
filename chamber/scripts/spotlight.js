@@ -38,6 +38,7 @@ function displayMembers(data) {
       const logo = document.createElement("img");
       logo.setAttribute("src", `images/directory/${business.image}`);
       logo.setAttribute("alt", business.name);
+      logo.setAttribute("loading", "lazy");
       link.appendChild(logo);
       card.appendChild(link);
       const name = document.createElement("h3");
