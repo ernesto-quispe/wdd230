@@ -102,6 +102,16 @@ footer p {
 .businesses, .business-card{
   max-width: 100%;
 }
+.business-card{
+  padding:2px;
+  border-style: solid;
+}
+.Gold{
+  border-color: gold;
+}
+.Silver{
+  border-color: silver;
+}
 img {
   max-width: 100%;
 }
@@ -503,17 +513,22 @@ form label.top input:required:valid {
   border-left: solid 4px green;
 }
 .memberlevel {
-  max-width: 35%;
+  max-width: 60%;
   min-width: 8rem;
-  text-align: center;
+  text-align: left;
   display: none;
   border: 1px solid var(--accent-color3);
   border-radius: 10px;
   padding: 0.5rem 2%;
   background-color: rgb(239, 243, 248);  
 }
+.memberlevel ul{
+  list-style-type: none;
+  padding:5px;
+}
+
 .memberlevel p {
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 5px;
   margin: 0;
   font-size: 0.8rem;
 }

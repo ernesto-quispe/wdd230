@@ -9,6 +9,7 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#caption");
 const cards = document.querySelector("#forecast");
 
+
 async function apiFetch(lat, lon, endpoint, units='imperial') {
   const url = `${baseUrl}${endpoint}?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
   //console.log(url);
@@ -20,6 +21,12 @@ async function apiFetch(lat, lon, endpoint, units='imperial') {
     console.error("Fetch error:", error);
   }
 }
+
+
+
+
+
+
 
 function displayCurrentWeather(data) {
   //display the weather icon, temperature and current weather status

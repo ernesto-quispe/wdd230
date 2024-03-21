@@ -1,113 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Santiago Chamber of Commerce Join Us">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ernesto-quispe.github.io/wdd230/chamber/images/pexels-alisha-lubben-2017747.jpg">
-    <meta property="og:url" content="https://ernesto-quispe.github.io/wdd230/chamber">
-    <title>Santiago Chamber of Commerce Join Us</title>
-    <meta name="description" content="Ernesto Quispe | WDD 230 - Webfrontend Development | Santiago Chamber of Commerce Join Page.">
-    <meta name="author" content="Ernesto Quispe">
-    <link rel="icon" href="images/ccs.ico">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
-  </head>
 
-  <body>
-    <header>
-      <img src="images/ccs-image.webp" alt="CCS Logo">
-      <button id="menu" aria-label="menu button"></button>
-      <!-- Rounded switch -->
-      <label class="switch">
-        <input type="checkbox" id="toggleCheckbox">
-        <span class="slider round"></span>
-      </label>      
-      <nav class="navigation">
-        <a href="index.html" class="navLinks active">Home</a>
-        <a href="discover.html" class="navLinks">Discover</a>
-        <a href="directory.html" class="navLinks">Directory</a>
-        <a href="join.html" class="navLinks">Join</a>
-      </nav>
-    </header>
-  
-    <main class="joinus-body">
-        <form method="get" action="thankyou.html">
-            <h1>Applicant Information</h1>
-            <fieldset>
-                <label class="top">First Name* <input type="text" name="fname" required pattern="[A-Za-z]+" id="fname"></label>
-                <label class="top">Last Name* <input type="text" name="lname" required pattern="[A-Za-z]+" id="lname"></label>
-                <label class="top">Business Position Title* <input type="text" name="businesPositionTitle" pattern="^[a-zA-Z\s\-]{7,}$" id="businesPositionTitle" required></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required id="email"></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required id="phone"></label>
-                <label class="top">Business Name* <input type="text" name="businessName" required id="businessName"></label>
-                <h2>Membership Level</h2>
-                <div id="membershipGrid">
-                
-                    <label id="npRadio" class="sbs radio"><input  type="radio" name="membershipLevel" value="np"> <span> Non Profit Membership</span></label>
-                    
-                    <div class="memberlevel" id="npBenefits">
-                        <h3>Non Profit:</h3>
-                        <p>Free option for non profit organizations.</p>
-                        <p>Benefits include being listed as a non profit.</p>
-                    </div>
-                    <label id="bronzeRadio" class="sbs radio"><input type="radio" name="membershipLevel" value="bronze"><span> Bronze Membership</span></label>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Santiago Chamber of Commerce Join Us">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://ernesto-quispe.github.io/wdd230/chamber/images/pexels-alisha-lubben-2017747.jpg">
+  <meta property="og:url" content="https://ernesto-quispe.github.io/wdd230/chamber">
+  <title>Santiago Chamber of Commerce Join Us</title>
+  <meta name="description"
+    content="Ernesto Quispe | WDD 230 - Webfrontend Development | Santiago Chamber of Commerce Join Page.">
+  <meta name="author" content="Ernesto Quispe">
+  <link rel="icon" href="images/ccs.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
 
-                    <div class="memberlevel" id="bronzeBenefits">
-                        <h3>Bronze Level:</h3>
-                        <p>A yearly fee of $50.00 </p>
-                        <p>Benefits include spotlight placement at least once a month.</p>
-                    </div>
+<body>
+  <header>
+    <img src="images/ccs-image.webp" alt="CCS Logo">
+    <button id="menu" aria-label="menu button"></button>
+    <!-- Rounded switch -->
+    <label class="switch">
+      <input type="checkbox" id="toggleCheckbox">
+      <span class="slider round"></span>
+    </label>
+    <nav class="navigation">
+      <a href="index.html" class="navLinks active">Home</a>
+      <a href="discover.html" class="navLinks">Discover</a>
+      <a href="directory.html" class="navLinks">Directory</a>
+      <a href="join.html" class="navLinks">Join</a>
+    </nav>
+  </header>
 
-                    <label id="silverRadio" class="sbs radio"><input type="radio" name="membershipLevel" value="silver"><span> Silver Membership</span></label>
-                    
-                    <div class="memberlevel" id="silverBenefits">
-                        <h3>Silver Level:</h3>
-                        <p>A yearly fee of $80.00 </p>
-                        <p>Benefits include spotlight placement at least 3 times a month.</p>
-                    </div>
-                    
-                    <label id="goldRadio" class="sbs radio"><input type="radio" name="membershipLevel" value="gold"> <span> Gold Membership</span></label>
-                    
-                    <div class="memberlevel" id="goldBenefits">
-                        <h3>Gold Level</h3>
-                        <p>A yearly fee of $150.00 </p>
-                        <p>Benefits include spotlight placement at least once a week.</p>
-                    </div>
-                </div>
-                <label class="top">Please describe your business<textarea name="businessDescription" placeholder="Business Description" id="businessDescription"></textarea></label>
-                <input type="hidden" id="date" name="date">
+  <main class="joinus-body">
+    <form method="get" action="thankyou.html">
+      <h1>Applicant Information</h1>
+      <fieldset>
+        <label class="top">First Name* <input type="text" name="fname" required pattern="[A-Za-z]+" id="fname"></label>
+        <label class="top">Last Name* <input type="text" name="lname" required pattern="[A-Za-z]+" id="lname"></label>
+        <label class="top">Business Position Title* <input type="text" name="businesPositionTitle"
+            pattern="^[a-zA-Z\s\-]{7,}$" id="businesPositionTitle" required></label>
+        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required
+            id="email"></label>
+        <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required id="phone"></label>
+        <label class="top">Business Name* <input type="text" name="businessName" required id="businessName"></label>
+        <h2>Membership Level</h2>
+        <div id="membershipGrid">
 
-                
+          <label id="npRadio" class="sbs radio"><input type="radio" name="membershipLevel" value="np"> <span> Non Profit
+              Membership</span></label>
 
-            </fieldset>
-            <input type="submit" value="Join The Chamber" class="submitBtn">
-        </form>
-    </main>
+          <div class="memberlevel" id="npBenefits">
+            <h3>Non Profit:</h3>
+            <p>Free option for non profit organizations.</p>
+            <p>Benefits include:</p>
+            <ul>
+              <li>being listed as a non profit.</li>
+          </div>
+          <label id="bronzeRadio" class="sbs radio"><input type="radio" name="membershipLevel" value="bronze"><span>
+              Bronze Membership</span></label>
 
-    <footer>
-      <p>Monjitas #392, Santiago - Chile</p>
-      <span> | </span>      
-      <p>+56 2 2360 7000</p>  
-      <span> | </span>      
-      <p>contacto@ccs.cl</p>
-      <span> | </span>      
-      <p>&copy; <span id="copywriteyear">Year </span>Ernesto Quispe - Peru</p>
-      <span> | </span>      
-      <p id="lastmod"></p>
-      <span> | </span>      
-      <p>WDD230 Proyect</p>
-    </footer>
+          <div class="memberlevel" id="bronzeBenefits">
+            <h3>Bronze Level:</h3>
+            <p>A yearly fee of $50.00 </p>
+            <p>Benefits include:</p>
+            <ul>
+              <li>Spotlight placement at least once a month.</li>
+              <li>Access to monthly networking events.</li>
+              <li>Listing in the online member directory.</li>
+            </ul>
 
-    <script src="../scripts/getdates.js"></script>
-    <script src="../scripts/menu.js"></script>
-    <script src="scripts/join.js"></script>
-    <script src="scripts/slider.js"></script>
-  </body>
+          </div>
+
+          <label id="silverRadio" class="sbs radio"><input type="radio" name="membershipLevel" value="silver"><span>
+              Silver Membership</span></label>
+
+          <div class="memberlevel" id="silverBenefits">
+            <h3>Silver Level:</h3>
+            <p>A yearly fee of $80.00 </p>
+            <p>Benefits include:</p>
+            <ul>
+              <li>Spotlight placement at least 3 times a month.</li>
+              <li>Access to monthly networking events and quarterly workshops.</li>
+              <li>Listing in the online member directory with a highlighted profile.</li>
+              <li>One complimentary ticket to the annual Chamber gala.</li>
+            </ul>
+
+          </div>
+
+          <label id="goldRadio" class="sbs radio"><input type="radio" name="membershipLevel" value="gold"> <span> Gold
+              Membership</span></label>
+
+          <div class="memberlevel" id="goldBenefits">
+            <h3>Gold Level:</h3>
+            <p>A yearly fee of $150.00 </p>
+            <p>Benefits include:</p>
+            <ul>
+              <li>Spotlight placement at least once a week.</li>
+              <li>Access to all networking events, workshops, and exclusive Gold member events.</li>
+              <li>Premium listing in the online member directory with a highlighted and featured profile.</li>
+              <li>Two complimentary tickets to the annual Chamber gala.</li>
+              <li>Opportunity to host a networking event.</li>
+            </ul>
+
+          </div>
+        </div>
+        <label class="top">Please describe your business<textarea name="businessDescription"
+            placeholder="Business Description" id="businessDescription"></textarea></label>
+        <input type="hidden" id="date" name="date">
+
+
+
+      </fieldset>
+      <input type="submit" value="Join The Chamber" class="submitBtn">
+    </form>
+  </main>
+
+  <footer>
+    <p>Monjitas #392, Santiago - Chile</p>
+    <span> | </span>
+    <p>+56 2 2360 7000</p>
+    <span> | </span>
+    <p>contacto@ccs.cl</p>
+    <span> | </span>
+    <p>&copy; <span id="copywriteyear">Year </span>Ernesto Quispe - Peru</p>
+    <span> | </span>
+    <p id="lastmod"></p>
+    <span> | </span>
+    <p>WDD230 Proyect</p>
+  </footer>
+
+  <script src="../scripts/getdates.js"></script>
+  <script src="../scripts/menu.js"></script>
+  <script src="scripts/join.js"></script>
+  <script src="scripts/slider.js"></script>
+</body>
+
 </html>
