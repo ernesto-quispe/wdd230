@@ -1,7 +1,7 @@
-//const membersURL = "https://ernesto-quispe.github.io/wdd230/chamber/data/members.json";
+const membersURL = "https://ernesto-quispe.github.io/wdd230/chamber/data/members.json";
 
 
-const membersURL = "./data/members.json";
+//const membersURL = "./data/members.json";
 
 async function getMembers(membersURL) {
   const response = await fetch(membersURL);
@@ -10,7 +10,7 @@ async function getMembers(membersURL) {
 }
 
 function displayMembers(data) {
-    console.log(data)
+    //console.log(data)
       const container = document.querySelector('#directory-list');
       container.innerHTML = ''; // Clear existing content
       

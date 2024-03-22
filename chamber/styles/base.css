@@ -448,6 +448,11 @@ margin: 0;
   margin:0;
   padding:30px;
 } 
+.discover-main h2 {
+  font-size: 2rem;
+  padding: 10px;
+  color: #2242AE;
+} 
 .left-column img {
   width: 100%;
   height: auto;
