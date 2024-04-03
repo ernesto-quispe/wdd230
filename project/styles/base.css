@@ -9,6 +9,8 @@
   --accent-color2: darkolivegreen;
   --accent-color3: #605f5e;
   --accent-color4: #000000;
+  --accent-color5: brown;
+  --accent-color6: #0a0a0a;
 }
 h1,
 h2,
@@ -26,12 +28,15 @@ div {
 h1 {
   font-size: 2rem;
   padding: 10px;
-  color: brown;
+  color: var(--accent-color5);
 }
 header {
   background-color: var(--accent-color1);
   margin: auto; /**/
   padding: 0;
+}
+.active{
+  text-decoration: underline;
 }
 
 nav {
@@ -43,13 +48,13 @@ nav {
   text-align: center;
 }
 nav a {
-  color: #0a0a0a;
+  color: var(--accent-color6);
   padding: 10px;
   text-decoration: none;
   font-size: 1.5rem;
 }
 nav a:visited {
-  color: #0a0a0a;
+  color: var(--accent-color6);
 }
 nav a:hover {
   color: #BB1B1B;
@@ -119,7 +124,7 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-.businesses, .business-card{
+/* .businesses, .business-card{
   max-width: 100%;
 }
 .business-card{
@@ -131,9 +136,10 @@ footer p {
 }
 .Silver{
   border-color: silver;
-}
+} */
 img {
   max-width: 100%;
+  height:auto;
 }
 p {
   padding:10px;
@@ -339,7 +345,7 @@ input:focus + .slider {
   border-radius: 10px;
 }
 
-#weather {
+/* #weather {
   margin: auto;
   display: inline-block;
 }
@@ -374,18 +380,19 @@ margin: 0;
 .forecast-card{
   border-style: solid;
   margin: 2px;
-}
+} */
 .button-join {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
 }
 
 .button-join span {
   padding: 10px;
-  font-size: 1rem; 
+  font-size: 3rem; 
   background-color: maroon;
   color: white;
   border-radius: 15px;

@@ -4,7 +4,7 @@ const lat = "-33.41";
 const lon = "-70.51";
 const units = "imperial";
 
-const currentTemp = document.querySelector("#current-temp");
+const currentTemp = document.querySelector(".currentTemp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#caption");
 const cards = document.querySelector("#forecast");
@@ -29,15 +29,16 @@ async function apiFetch(lat, lon, endpoint, units='imperial') {
 
 
 function displayCurrentWeather(data) {
+  // console.log(data)
   //display the weather icon, temperature and current weather status
-  currentTemp.textContent = `${Math.round(data.main.temp)}°F`;
-  const iconCode = data.weather[0].icon;
-  const iconSrc = `https://openweathermap.org/img/w/${iconCode}.png`;
-  let desc = titleCase(data.weather[0].description);
+  currentTemp.textContent = `High today: ${Math.round(data.main.temp_max)}°F`;
+  // const iconCode = data.weather[0].icon;
+  // const iconSrc = `https://openweathermap.org/img/w/${iconCode}.png`;
+  // let desc = titleCase(data.weather[0].description);
 
-  weatherIcon.src = iconSrc;
-  weatherIcon.alt = desc;
-  captionDesc.textContent = desc;
+  // weatherIcon.src = iconSrc;
+  // weatherIcon.alt = desc;
+  // captionDesc.textContent = desc;
 }
 
 function displayForecast(data) {
@@ -104,8 +105,8 @@ async function initWeatherApp() {
   const currentWeatherData = await apiFetch(lat, lon, "weather", units);;
   if (currentWeatherData) displayCurrentWeather(currentWeatherData);
 
-  const forecastData = await apiFetch(lat, lon, "forecast", units);
-  if (forecastData) displayForecast(forecastData);
+  // const forecastData = await apiFetch(lat, lon, "forecast", units);
+  // if (forecastData) displayForecast(forecastData);
 }
 
 function getDayOfWeek(dateString) {

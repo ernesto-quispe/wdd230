@@ -4,12 +4,39 @@
     max-width: 90%;
     display: flex;
     flex-direction: row;
+    justify-content: start;
   }
+
+
+  #logoDiv{
+    margin:5px;
+    padding:0;
+    display:flex;
+    align-items: center;
+  }
+
   #menu {
     display: none; /* hide hamburger button */
   }
 
-  .businesses {
+  .hero{
+    display:flex;
+    justify-content: space-around;
+  }
+  #hero-logo{
+    max-width:420px;;
+    height:auto;
+  }
+
+  .button-join {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* .businesses {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -28,7 +55,7 @@
   }
   .weather-join-card {
     margin: auto;
-  }
+  } */
   main {
     max-width: 90%;
   }
