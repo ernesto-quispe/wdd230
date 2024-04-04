@@ -53,21 +53,11 @@
       <h1>Discover Scoots, Discover Cozumel</h1>
       <img id="hero-logo" src="images/logo.webp" alt="Logo">
       <div class="button-join">
-        <a href="join.html"><span>Reserve</span>
+        <a href="reservations.html"><span>Reserve</span>
         </a>
       </div>
 
     </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <!-- <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-    </div> -->
-
     <section class="hero-banner">
       <h2>Welcome to Scoots</h2>
       <p>
@@ -77,10 +67,70 @@
 
     <section class="rentals">
       <h3>Meet Our Best Sellers!</h3>
-<picture>
-  <source srcset="https://placehold.co/500x250" media="(max-width: 860px)">
-  <img src="https://placehold.co/1600x800" loading="lazy" alt="Banner Home">
-</picture> 
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+      <img src="https://placehold.co/1600x800" alt="scooter picture on the beach">
+      <p class="text-overlay">A perfect get away for one. Great for the streets and beaches of our island!</p>
+  </div>
+  <div class="mySlides">
+      <img src="https://placehold.co/1600x800" alt="scooter picture on the beach 2">
+      <p class="text-overlay">Text 2</p>
+  </div>
+  <div class="mySlides">
+      <img src="https://placehold.co/1600x800" alt="scooter picture on the beach 3">
+      <p class="text-overlay">Text 3</p>
+  </div>
+  <div class="mySlides">
+      <img src="https://placehold.co/1600x800" alt="atv picture on the beach">
+      <p class="text-overlay">Text 4</p>
+  </div>
+  <div class="mySlides">
+      <img src="https://placehold.co/1600x800" alt="Jeep picture on the beach">
+      <p class="text-overlay">Text 5</p>
+  </div>
+  <div class="mySlides">
+      <img src="https://placehold.co/1600x800" alt="Jeep picture on the beach 2">
+      <p class="text-overlay">Text 6</p>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption">Captions Here</p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+
+      <img class="demo cursor" src="https://placehold.co/80x80" style="width:100%" onclick="currentSlide(1)" alt="Scooter Thumbnail">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://placehold.co/80x80" style="width:100%" onclick="currentSlide(2)" alt="Scooter Thumbnail 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://placehold.co/80x80" style="width:100%" onclick="currentSlide(3)" alt="Scooter Thumbnail 3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://placehold.co/80x80" style="width:100%" onclick="currentSlide(4)" alt="Atv Thumbnail">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://placehold.co/80x80" style="width:100%" onclick="currentSlide(5)" alt="Jeep Thumbnail1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://placehold.co/80x80" style="width:100%" onclick="currentSlide(6)" alt="Jeep Thumbnail2">
+    </div>
+    
+  </div>
+</div>
+
 </section>
     <section class="cozumel">
       <h3>Discover Our Side of Cozumel</h3>
@@ -133,7 +183,7 @@
 
   <script src="../scripts/getdates.js"></script>
   <script src="../scripts/menu.js"></script>
-  <!-- <script src="scripts/slides.js"></script> -->
+  <script src="scripts/slides.js"></script>
   <script src="scripts/slider.js"></script>
   <!-- <script src="scripts/spotlight.js"></script> -->
   <!-- <script src="scripts/windchill.js"></script> -->
