@@ -92,7 +92,9 @@ main {
   width: 100%;
   height: 100%;
 } */
-
+.hero-banner{
+  font-size: 1.5em;
+}
 
 h3 {
   background-color: var(--accent-color2);
@@ -168,10 +170,11 @@ p {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  margin:auto;
 }
 
 /* Hide the images by default */
-.mySlides, .text-overlay {
+.mySlides{
   display: none;
 }
 
@@ -196,15 +199,30 @@ p {
   user-select: none;
   -webkit-user-select: none;
 }
+.cozumel-container {
+  margin:auto;
+  margin-bottom:5px;
+  display:grid;
+  grid-template-columns: 1fr;
+}
+.cozumel-container picture{
+  position:relative;
+  margin:0;
+  border-radius: 5px;
+  overflow: hidden;
+padding:0;
+
+}
 
 .text-overlay{
   position: absolute;
-  bottom:31%;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
-  width: 100%; /* Full width */
-  padding: 20px; /* Some padding */
+  bottom:0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width:100%;
+  margin:0;
+  z-index: 1;
 }
 
 /* Position the "next button" to the right */
@@ -254,6 +272,8 @@ p {
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+  width:100%;
+  height:auto;
 }
 
 .active,
@@ -261,8 +281,20 @@ p {
   opacity: 1;
 }
 
+.rentals{
+  display:flex;
+  flex-direction: column;
+}
 
-
+.information p {
+  font-size: 1em;
+  background-color: var(--accent-color1);
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  height: auto;
+  text-align: justify;
+}
 
 
 
@@ -364,7 +396,7 @@ input:focus + .slider {
   border-radius: 10px;
 }
 
-/* #weather {
+#weather {
   margin: auto;
   display: inline-block;
 }
@@ -399,7 +431,7 @@ margin: 0;
 .forecast-card{
   border-style: solid;
   margin: 2px;
-} */
+}
 .button-join {
   position: absolute;
   top: 60%;

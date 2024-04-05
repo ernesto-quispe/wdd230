@@ -1,22 +1,42 @@
 @media screen and (min-width: 1200px) {
+
   main,
   header,
   nav,
   footer {
-    max-width: 1600px;
+    max-width: 90%;
 
   }
+
   .businesses {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
   }
-  
+
   .business-card {
     flex: 1;
     margin: 20px;
     flex-direction: column;
-  justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  .rentals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .information p {
+    font-size: 1.25em;
+    background-color: var(--accent-color1);
+    margin: 5px;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    height: auto;
+    text-align: justify;
+    line-height: 1.5em;
   }
 }

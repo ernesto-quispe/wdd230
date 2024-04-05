@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Scooter Rental">
   <meta property="og:type" content="website">
-  <meta property="og:image"
-    content="https://ernesto-quispe.github.io/wdd230/project/images/cozumelName.jpg">
+  <meta property="og:image" content="https://ernesto-quispe.github.io/wdd230/project/images/cozumelName.jpg">
   <meta property="og:url" content="https://ernesto-quispe.github.io/wdd230/project">
   <title>Scooter Rental</title>
-  <meta name="description"
-    content="Ernesto Quispe | WDD 230 - Final Proyect | Scooter Rental">
+  <meta name="description" content="Ernesto Quispe | WDD 230 - Final Proyect | Scooter Rental">
   <meta name="author" content="Ernesto Quispe">
-  <link rel="icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/aiGenerated/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/aiGenerated/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/aiGenerated/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="images/aiGenerated/favicon_io/site.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
@@ -22,12 +23,13 @@
   <link rel="preload" href="styles/base.css" as="style">
   <link rel="preload" href="styles/medium.css" as="style">
   <link rel="preload" href="styles/larger.css" as="style">
+  <link rel="preload" href="images/aiGenerated/scootsLocation2-300x300.webp" as="image">
 </head>
 
 <body>
   <header>
     <div id="logoDiv">
-    <img src="images/logo-50.webp" alt="Scoots Logo">
+      <img src="images/logo-50.webp" alt="Scoots Logo">
     </div>
     <button id="menu" aria-label="menu button"></button>
     <!-- Rounded switch -->
@@ -40,18 +42,20 @@
       <a href="rentals.html" class="navLinks">Rentals</a>
       <a href="reservations.html" class="navLinks">Reservations</a>
       <a href="contact.html" class="navLinks">Contact</a>
+      <a href="links.html" class="navLinks">Links</a>
+
     </nav>
   </header>
   <main>
-    <div id="meetbanner" class="displayed">
-      <p class="currentTemp">Weather Information<span id="close-banner">❌</span></p>
-      
+    <div id="meetbanner">
+      <p><span class="highTemp">Weather Information</span><span id="close-banner">❌</span></p>
+
     </div>
 
     <div class="hero">
 
       <h1>Discover Scoots, Discover Cozumel</h1>
-      <img id="hero-logo" src="images/logo.webp" alt="Logo">
+      <img id="hero-logo" src="images/aiGenerated/scootsLocation2-300x300.webp" alt="Logo">
       <div class="button-join">
         <a href="reservations.html"><span>Reserve</span>
         </a>
@@ -61,85 +65,145 @@
     <section class="hero-banner">
       <h2>Welcome to Scoots</h2>
       <p>
-        Go on an adventure. Escape the humdrum. Get away from the tourist traps. Rent a vehicle and enjoy the hidden parts of the island!
+        Go on an adventure. Escape the humdrum. Get away from the tourist traps. Rent a vehicle and enjoy the hidden
+        parts of the island!
       </p>
     </section>
 
     <section class="rentals">
-      <h3>Meet Our Best Sellers!</h3>
-<!-- Container for the image gallery -->
-<div class="container">
+      <div class="information">
+        <h3>Who We Are</h3>
+        <p>Welcome to Scoots! Your gateway to the thrilling, uncharted territories of Cozumel! We’re not just a rental
+          company, we’re your ticket to an unforgettable island adventure!
+          </br>
+          </br>
+          Our journey began with our fearless founder, Carlos Mendez, a Cozumel native with a burning desire to share
+          the island’s hidden treasures. Tired of seeing visitors miss out on the true beauty of Cozumel, Carlos took
+          matters into his own hands. He created Scoots, a company that breaks away from the usual, offering you the
+          freedom to explore the island’s secret spots on your own terms.
+          </br>
+          </br>
+          At Scoots, we’re all about the thrill of discovery! We offer top-notch scooters, jeeps, and ATVs, perfect for
+          adventurers ready to veer off the beaten path. We believe in the magic of Cozumel, and we’re here to help you
+          uncover it!
+          </br>
+          </br>
+          So, are you ready to escape the crowds? Ready to discover the island’s best-kept secrets? With Scoots, you’re
+          not just renting a vehicle, you’re embarking on the adventure of a lifetime!
+          </br>
+          </br>
+          Join us at Scoots, and let’s make your Cozumel experience truly unforgettable!
+        </p>
+      </div>
+      <!-- Container for the image gallery -->
+      <div class="container">
+        <h3>Meet Our Best Sellers!</h3>
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <img src="./images/aiGenerated/atv3-1024x768.webp" loadings="lazy" alt="scooter picture on the beach">
+        </div>
+        <div class="mySlides">
+          <img src="./images/aiGenerated/ATV1-1024x768.webp" loadings="lazy" alt="scooter picture on the beach 2">
+        </div>
+        <div class="mySlides">
+          <img src="./images/aiGenerated/scooter1-1024x768.webp" loadings="lazy" alt="scooter picture on the beach 3">
+        </div>
+        <div class="mySlides">
+          <img src="./images/aiGenerated/scooter2-1024x768.webp" loadings="lazy" alt="atv picture on the beach">
+        </div>
+        <div class="mySlides">
+          <img src="./images/aiGenerated/jeep1-1024x768.webp" loadings="lazy" alt="Jeep picture on the beach">
+        </div>
+        <div class="mySlides">
+          <img src="./images/aiGenerated/jeep2-1024x768.webp" loadings="lazy" alt="Jeep picture on the beach 2">
+        </div>
 
-  <!-- Full-width images with number text -->
-  <div class="mySlides">
-      <img src="./images/atv3-1024x768.webp" alt="scooter picture on the beach">
-      <p class="text-overlay">A perfect get away for one. Great for the streets and beaches of our island!</p>
-  </div>
-  <div class="mySlides">
-      <img src="https://placehold.co/1024x768" alt="scooter picture on the beach 2">
-      <p class="text-overlay">Text 2</p>
-  </div>
-  <div class="mySlides">
-      <img src="https://placehold.co/1024x768" alt="scooter picture on the beach 3">
-      <p class="text-overlay">Text 3</p>
-  </div>
-  <div class="mySlides">
-      <img src="https://placehold.co/1024x768" alt="atv picture on the beach">
-      <p class="text-overlay">Text 4</p>
-  </div>
-  <div class="mySlides">
-      <img src="https://placehold.co/1024x768" alt="Jeep picture on the beach">
-      <p class="text-overlay">Text 5</p>
-  </div>
-  <div class="mySlides">
-      <img src="https://placehold.co/1024x768" alt="Jeep picture on the beach 2">
-      <p class="text-overlay">Text 6</p>
-  </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption">Captions Here</p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+
+            <img class="demo cursor" src="./images/thumbnails/atv3-107x80.webp" onclick="currentSlide(1)"
+              alt="Conquer the waves and the sand with our great line of ATVs">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/thumbnails/ATV1-107x80.webp" onclick="currentSlide(2)"
+              alt="Take some friends on an adventure in our 4 seater">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/thumbnails/scooter1-107x80.webp" onclick="currentSlide(3)"
+              alt="Enjoy the beach or the road with our delux line of scooters">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/thumbnails/scooter2-107x80.webp" onclick="currentSlide(4)"
+              alt="Find peace on a less crowded beach!">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/thumbnails/jeep1-107x80.webp" onclick="currentSlide(5)"
+              alt="Take all you need for a great picnic with our exclusive jeeps">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/thumbnails/jeep2-107x80.webp" onclick="currentSlide(6)"
+              alt="Enjoy the wind and sun and explore all of our views.">
+          </div>
+
+        </div>
+      </div>
 
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
 
-  <!-- Image text -->
-  <div class="caption-container">
-    <p id="caption">Captions Here</p>
-  </div>
 
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-
-      <img class="demo cursor" src="./images/atv3-107x80.webp" style="width:100%" onclick="currentSlide(1)" alt="Scooter Thumbnail">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://placehold.co/107x80" style="width:100%" onclick="currentSlide(2)" alt="Scooter Thumbnail 2">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://placehold.co/107x80" style="width:100%" onclick="currentSlide(3)" alt="Scooter Thumbnail 3">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://placehold.co/107x80" style="width:100%" onclick="currentSlide(4)" alt="Atv Thumbnail">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://placehold.co/107x80" style="width:100%" onclick="currentSlide(5)" alt="Jeep Thumbnail1">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://placehold.co/107x80" style="width:100%" onclick="currentSlide(6)" alt="Jeep Thumbnail2">
-    </div>
-    
-  </div>
-</div>
-
-</section>
-    <section class="cozumel">
+    <section class="cozumel-container">
       <h3>Discover Our Side of Cozumel</h3>
       <picture>
-        <source srcset="https://placehold.co/500x250" media="(max-width: 860px)">
-        <img src="https://placehold.co/1600x800" loading="lazy" alt="Banner Home">
-      </picture> 
+        <source srcset="images/cozumel/cozumel-port-sign-500x375.webp" media="(max-width: 860px)">
+        <img src="images/cozumel/cozumel-port-sign.webp" loading="lazy" alt="Cozumel Port Sign">
+        <div class="text-overlay">
+          <!-- <h4>Beautiful Cozumel</h4> -->
+          <p>We love our guests that come in on the cruise ships.</p>
+        </div>
+      </picture>
+
+      <picture>
+        <source srcset="images/cozumel/beachview-500x375.webp" media="(max-width: 860px)">
+        <img src="images/cozumel/beachview.webp" loading="lazy" alt="A beach view">
+        <div class="text-overlay">
+          <!-- <h4>Beautiful Cozumel</h4> -->
+          <p>Our beaches are the best in the world for relaxing and enjoying the waves.</p>
+        </div>
+      </picture>
+
+      <picture>
+        <source srcset="images/cozumel/Playa-del-Carmen-houses-boats-500x375.webp" media="(max-width: 860px)">
+        <img src="images/cozumel/Playa-del-Carmen-houses-boats.webp" loading="lazy"
+          alt="Play del carmen with some boats in the water">
+        <div class="text-overlay">
+          <!-- <h4>Beautiful Cozumel</h4> -->
+          <p>Come and stay in the beautiful bungalos so you can enjoy our island more.</p>
+        </div>
+      </picture>
+      <picture>
+        <source srcset="images/cozumel/SoyIslaCozumel-500x375.webp" media="(max-width: 860px)">
+        <img src="images/cozumel/SoyIslaCozumel.webp" loading="lazy"
+          alt="Grafiti on the wall that says Soy Isla Cozumel">
+        <div class="text-overlay">
+          <!-- <h4>Beautiful Cozumel</h4> -->
+          <p>Enjoy the local artists in places not seen by the mainstream tours.</p>
+        </div>
+      </picture>
     </section>
-    <!-- <section id="weather" class="weather-join-card">
+
+    <section id="weather" >
       <h3>Weather for Today</h3>
       <div class="weatherDiv">
         <div id="current">
@@ -147,15 +211,15 @@
           <img src="https://placehold.co/10x10" alt="placeholder" id="weather-icon">
           <span class="currentTemp" id="current-temp"></span>
           <span>&nbsp;-&nbsp;</span>
-          <span id="caption"></span>
+          <span id="weatherCaption"></span>
+          <span>&nbsp;-&nbsp;</span>
+          <span id="humidity"></span>
+          <span>&nbsp;-&nbsp;</span>
+          <span id="feelsLike"></span>
         </div>
-
         <div>
-          <h4>Windspeed:</h4>
-          <span class="windSpeed">30</span>
-          <span>MPH</span>
-          <h4>Wind Chill:</h4>
-          <span class="windChill"></span>
+          <span class="highTemp"></span>
+          <span>&nbsp;-&nbsp;</span>
         </div>
         <div id="forecast">
 
@@ -163,22 +227,27 @@
       </div>
       <a href="https://openweathermap.org/" class="link-weather">Information provided by OpenWeatherMap.org</a>
 
-    </section> -->
+    </section>
+
 
   </main>
 
   <footer>
-    <p>Monjitas #392, Santiago - Chile</p>
+    <p>Main location: 123 Avenida Rafael E. Melgar, Cozumel, Quintana Roo, Mexico 77600</p>
     <span> | </span>
-    <p>+56 2 2360 7000</p>
+    <p>+52 987 654 3210</p>
     <span> | </span>
-    <p>contacto@ccs.cl</p>
+    <p>Sister location: 456 Calle 10 Norte, Cozumel, Quintana Roo, Mexico 77620</p>
+    <span> | </span>
+    <p>+52 987 654 3210</p>
+    <span> | </span>
+    <p>contact@scoots.mx</p>
     <span> | </span>
     <p>&copy; <span id="copywriteyear">Year </span>Ernesto Quispe - Peru</p>
     <span> | </span>
     <p id="lastmod"></p>
     <span> | </span>
-    <p>WDD230 Proyect</p>
+    <p>WDD230 Final Proyect</p>
   </footer>
 
   <script src="../scripts/getdates.js"></script>
@@ -189,6 +258,7 @@
   <!-- <script src="scripts/windchill.js"></script> -->
   <script src="scripts/weather.js"></script>
   <script src="scripts/banner.js"></script>
+
 </body>
 
 </html>
