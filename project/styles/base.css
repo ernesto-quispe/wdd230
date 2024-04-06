@@ -114,6 +114,12 @@ footer {
 footer p {
   display: inline;
 }
+.social-media img {
+  width: 40px;
+}
+
+
+
 /* small view navigation */
 #menu {
   font-size: 2.5rem;
@@ -406,7 +412,7 @@ input:focus + .slider {
 .weatherDiv h4 {
    display: inline;
 }
-#current {   
+.current {   
   display:flex;
   flex-direction: row;
   justify-content: center;
@@ -486,6 +492,75 @@ margin: 0;
 
 
 
+/**  Rentals Page **/
+.events-grid {
+  margin: auto;
+  padding: 20px 0;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  justify-items: center;
+}
+.all-events {
+  padding: 5px;
+  margin: 10px; 
+  box-shadow: 0 15px 20px #999; 
+  text-align: center;
+  position: relative;
+  background-color: #1C1C1C;
+  border-radius: 15px;
+}
+
+.events-msg{
+ background-color: #1CD1C5;
+ color: #1C1C1C;
+ border-color: #1C1C1C;
+ border-radius: 15px;
+ border-style: solid;
+ max-width: 90%;
+ margin: auto;
+}
+.events-msg h2{
+  color: #1C1C1C;
+}
+.all-events h3 {
+ color: #1CD1C5;
+}
+
+.image {
+display: block;
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+opacity: 0;
+transition: .5s ease;
+background-color: #1CD1C5;
+}
+
+.all-events:hover .overlay {
+opacity: 1;
+}
+
+.text {
+color: #1C1C1C;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
 
 
 
@@ -499,7 +574,21 @@ margin: 0;
 
 
 
-/**  Discover Page **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  .discover-img {
   max-width: 400px;
   padding: 5px;
@@ -570,6 +659,29 @@ margin: 0;
 .history {
   margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*----------------------------------- FORM -----------------------------------*/
 .joinus-body h1{

@@ -174,21 +174,7 @@ function displayForecast(data) {
 
   // If there is a forecast for tomorrow at 15:00, create a card for it
   if (forecast) {
-    let card = document.createElement("section");
-    let date = document.createElement("h4");
-    date.textContent = getDayOfWeek(tomorrowStr);
-
-    let tempDiv = document.createElement("div");
-    tempDiv.classList.add("temp");
-    let temp = document.createElement("p");
-    temp.textContent = `Temp at 15:00: ${Math.round(forecast.main.temp)}°F`;
-    tempDiv.appendChild(temp);
-
-    card.appendChild(date);
-    card.appendChild(tempDiv);
-    card.classList.add("forecast-card");
-
-    cards.appendChild(card);
+    cards.textContent = `Temp tomorrow at 15:00: ${Math.round(forecast.main.temp)}°F`;
   }
 }
 

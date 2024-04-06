@@ -33,10 +33,10 @@
     </div>
     <button id="menu" aria-label="menu button"></button>
     <!-- Rounded switch -->
-    <label class="switch">
+    <!-- <label class="switch">
       <input type="checkbox" id="toggleCheckbox">
       <span class="slider round"></span>
-    </label>
+    </label> -->
     <nav class="navigation">
       <a href="index.html" class="navLinks active">Home</a>
       <a href="rentals.html" class="navLinks">Rentals</a>
@@ -206,7 +206,7 @@
     <section id="weather" >
       <h3>Weather for Today</h3>
       <div class="weatherDiv">
-        <div id="current">
+        <div class="current">
           <h4>Current:</h4>
           <img src="https://placehold.co/10x10" alt="placeholder" id="weather-icon">
           <span class="currentTemp" id="current-temp"></span>
@@ -217,12 +217,10 @@
           <span>&nbsp;-&nbsp;</span>
           <span id="feelsLike"></span>
         </div>
-        <div>
+        <div class="current">
           <span class="highTemp"></span>
           <span>&nbsp;-&nbsp;</span>
-        </div>
-        <div id="forecast">
-
+          <span id="forecast"></span>
         </div>
       </div>
       <a href="https://openweathermap.org/" class="link-weather">Information provided by OpenWeatherMap.org</a>
@@ -248,12 +246,16 @@
     <p id="lastmod"></p>
     <span> | </span>
     <p>WDD230 Final Proyect</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.webp" alt="icon facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.webp" alt="icon instagram"></a>
+    </div>
   </footer>
 
   <script src="../scripts/getdates.js"></script>
   <script src="../scripts/menu.js"></script>
   <script src="scripts/slides.js"></script>
-  <script src="scripts/slider.js"></script>
+  <!-- <script src="scripts/slider.js"></script> -->
   <!-- <script src="scripts/spotlight.js"></script> -->
   <!-- <script src="scripts/windchill.js"></script> -->
   <script src="scripts/weather.js"></script>
@@ -262,3 +264,6 @@
 </body>
 
 </html>
+
+
+
