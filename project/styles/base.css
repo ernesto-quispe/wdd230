@@ -486,19 +486,12 @@ margin: 0;
 
 
 
-
-
-
-
-
-
-/**  Rentals Page **/
 .events-grid {
   margin: auto;
   padding: 20px 0;
   max-width: 1000px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
   justify-items: center;
 }
