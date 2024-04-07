@@ -1,13 +1,10 @@
 {
   "rentalPricing": [
     {
-      "rentalType": "Honda Metro Scooter",
+      "rentalModel": "Honda Metro Scooter",
+      "type":"scooter",
       "maxPersons": 1,
-      "images": {
-        "0": "honda-metropolitan-1-500.webp",
-        "1": "honda-metropolitan-2-500.webp",
-        "2": "honda-metropolitan-3-500.webp"
-      },
+      "image": "honda-metropolitan-1-500.webp",
       "pricing": {
         "reservation": {
           "halfDay": 20,
@@ -20,13 +17,10 @@
       }
     },
     {
-      "rentalType": "Honda Dio Scooter",
+      "rentalModel": "Honda Dio Scooter",
+      "type":"scooter",
       "maxPersons": 2,
-      "images": {
-        "0": "honda-dio-1-500.webp",
-        "1": "honda-dio-2-500.webp",
-        "2": "honda-dio-3-500.webp"
-      },
+      "image" : "honda-dio-1-500.webp",
       "pricing": {
         "reservation": {
           "halfDay": 30,
@@ -39,13 +33,10 @@
       }
     },
     {
-      "rentalType": "Honda PCX150 Scooter",
+      "rentalModel": "Honda PCX150 Scooter",
+      "type":"scooter",
       "maxPersons": 2,
-      "images": {
-        "0": "honda-px150-1-500.webp",
-        "1": "honda-px150-2-500.webp",
-        "2": "honda-px150-3-500.webp"
-      },
+      "image":  "honda-pcx150-1-500.webp",
       "pricing": {
         "reservation": {
           "halfDay": 40,
@@ -58,13 +49,10 @@
       }
     },
     {
-      "rentalType": "Honda Pioneer ATV",
+      "rentalModel": "Honda Pioneer ATV",
+      "type":"atv",
       "maxPersons": 4,
-      "images": {
-        "0": "honda-pioneer-1-500.webp",
-        "1": "honda-pioneer-1-500.webp",
-        "2": "honda-pioneer-1-500.webp"
-      },
+      "image": "honda-pioneer-1-500.webp",
       "pricing": {
         "reservation": {
           "halfDay": 50,
@@ -77,13 +65,10 @@
       }
     },
     {
-      "rentalType": "Jeep Wrangler - 4 door with a/c",
+      "rentalModel": "Jeep Wrangler - 4 Door",
+      "type":"jeep",
       "maxPersons": 5,
-      "images": {
-        "0": "4door-1-500.webp",
-        "1": "4door-2-500.webp",
-        "2": "4door-3-500.webp"
-      },
+      "image": "4door-1-500.webp",
       "pricing": {
         "reservation": {
           "halfDay": 70,
@@ -96,13 +81,10 @@
       }
     },
     {
-      "rentalType": "Jeep Wrangler - 2 door",
+      "rentalModel": "Jeep Wrangler - 2 Door",
+      "type":"jeep",
       "maxPersons": 4,
-      "images": {
-        "0": "2door-1-500.webp",
-        "1": "2door-2-500.webp",
-        "2": "2door-3-500.webp"
-      },
+      "image":"2door-1-500.webp",
       "pricing": {
         "reservation": {
           "halfDay": 60,
