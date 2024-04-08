@@ -382,13 +382,14 @@ main h2 {
 }
 .vehicle {
   padding: 5px;
-  margin: 10px; 
+  margin: auto; 
   box-shadow: 0 15px 20px #d1bbbb; 
   text-align: center;
   position: relative;
   background-color: #4d495e;
   border-radius: 15px;
   overflow:hidden;
+  
 }
 
 .terms{
