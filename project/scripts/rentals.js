@@ -23,7 +23,7 @@ verhiclesGrid.innerHTML = ""
 
   
       let img = document.createElement("img");
-      img.src = `images/rentals/${rental.type}/${rental.image}-500.webp`;
+      img.src = `images/rentals/${rental.type}/${rental.image}-250.webp`;
       
       img.alt = rental.Model
 
