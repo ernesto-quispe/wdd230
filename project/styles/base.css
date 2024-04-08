@@ -77,21 +77,6 @@ main {
   text-align: center;
 }
 
-/* 
-.slideshow-container{
-  position: relative;
-  width: 100%;
-  padding-top: 105%; 
-  overflow: hidden;
-}
-
-.slideshow-container picture {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 .hero-banner{
   font-size: 1.5em;
 }
@@ -142,19 +127,6 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-/* .businesses, .business-card{
-  max-width: 100%;
-}
-.business-card{
-  padding:2px;
-  border-style: solid;
-}
-.Gold{
-  border-color: gold;
-}
-.Silver{
-  border-color: silver;
-} */
 img {
   max-width: 100%;
   height:auto;
@@ -469,22 +441,10 @@ margin: 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/** Rentals  **/
+main h2 {
+  color: var(--accent-color2);
+}
 
 .verhicles-grid {
   margin: auto;
@@ -498,16 +458,15 @@ margin: 0;
 .vehicle {
   padding: 5px;
   margin: 10px; 
-  box-shadow: 0 15px 20px #999; 
+  box-shadow: 0 15px 20px #d1bbbb; 
   text-align: center;
   position: relative;
-  background-color: #1C1C1C;
+  background-color: #4d495e;
   border-radius: 15px;
 }
 
 .terms{
-
- color: #1C1C1C;
+color: #1C1C1C;
 text-align: left;
  max-width: 90%;
  margin: auto;
@@ -535,7 +494,7 @@ left: 0;
 right: 0;
 opacity: 0;
 transition: .5s ease;
-background-color: #1CD1C5;
+background-color: yellow;
 }
 
 .vehicle:hover .overlay {
