@@ -21,6 +21,8 @@ function createRentalCards(data) {
   
       let img = document.createElement("img");
       img.src = `images/rentals/${rental.type}/${rental.image}`;
+      
+      img.alt = rental.Model
       card.appendChild(img);
         
       let title = document.createElement("h3");

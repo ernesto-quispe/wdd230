@@ -4,7 +4,7 @@
       "rentalModel": "Honda Metro Scooter",
       "type":"scooter",
       "maxPersons": 1,
-      "image": "honda-metropolitan-1-500.webp",
+      "image": "honda-metropolitan-1-250.webp",
       "pricing": {
         "reservation": {
           "halfDay": 20,
@@ -20,7 +20,7 @@
       "rentalModel": "Honda Dio Scooter",
       "type":"scooter",
       "maxPersons": 2,
-      "image" : "honda-dio-1-500.webp",
+      "image" : "honda-dio-1-250.webp",
       "pricing": {
         "reservation": {
           "halfDay": 30,
@@ -36,7 +36,7 @@
       "rentalModel": "Honda PCX150 Scooter",
       "type":"scooter",
       "maxPersons": 2,
-      "image":  "honda-pcx150-1-500.webp",
+      "image":  "honda-pcx150-1-250.webp",
       "pricing": {
         "reservation": {
           "halfDay": 40,
@@ -52,7 +52,7 @@
       "rentalModel": "Honda Pioneer ATV",
       "type":"atv",
       "maxPersons": 4,
-      "image": "honda-pioneer-1-500.webp",
+      "image": "honda-pioneer-1-250.webp",
       "pricing": {
         "reservation": {
           "halfDay": 50,
@@ -68,7 +68,7 @@
       "rentalModel": "Jeep Wrangler - 4 Door",
       "type":"jeep",
       "maxPersons": 5,
-      "image": "4door-1-500.webp",
+      "image": "4door-1-250.webp",
       "pricing": {
         "reservation": {
           "halfDay": 70,
@@ -84,7 +84,7 @@
       "rentalModel": "Jeep Wrangler - 2 Door",
       "type":"jeep",
       "maxPersons": 4,
-      "image":"2door-1-500.webp",
+      "image":"2door-1-250.webp",
       "pricing": {
         "reservation": {
           "halfDay": 60,
