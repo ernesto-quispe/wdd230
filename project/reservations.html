@@ -33,10 +33,10 @@
     </div>
     <button id="menu" aria-label="menu button"></button>
     <!-- Rounded switch -->
-    <label class="switch">
+    <!-- <label class="switch">
       <input type="checkbox" id="toggleCheckbox">
       <span class="slider round"></span>
-    </label>
+    </label> -->
     <nav class="navigation">
       <a href="index.html" class="navLinks">Home</a>
       <a href="rentals.html" class="navLinks">Rentals</a>
@@ -53,7 +53,7 @@
       <form method="get" action="thankyou.html">
         <fieldset>
           <label class="top">Date* <input type="date" name="date" required id="date" autocomplete="date"></label>
-          <h2>Period*</h2>
+          <h2 class="period">Period*</h2>
             <label for="halfday" class="sbs radio"><input type="radio" id="halfday" name="period" value="halfday"><span class="label-form-text">Half Day</span></label>
             <label for="fullday" class="sbs radio"><input type="radio" id="fullday" name="period" value="fullday"><span class="label-form-text">Full Day</span></label>
 
@@ -71,8 +71,8 @@
           <label class="top">Phone Number* <input type="tel" name="phone" required id="phone" autocomplete="tel"></label>
           <label class="top">Full Name* <input type="text" name="fullname" required id="fullname" autocomplete="name"></label>
           <label class="top">Email* <input type="email" name="email" required id="email" autocomplete="email"></label>
-          <label class="top">Home State or Country* <input type="text" name="homestate" required id="homestate"></label>
-          <label class="top">Cruise Line* 
+          <label class="top">Home State or Country <input type="text" name="homestate" required id="homestate"></label>
+          <label class="top">Cruise Line
             <select name="cruiseline" id="cruiseline">
               <option value="aida">Aida</option>
               <option value="azamara">Azamara</option>

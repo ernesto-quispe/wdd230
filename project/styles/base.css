@@ -450,10 +450,8 @@ main h2 {
   margin: auto;
   padding: 20px 0;
   max-width: 1000px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .vehicle {
   padding: 5px;
@@ -463,6 +461,7 @@ main h2 {
   position: relative;
   background-color: #4d495e;
   border-radius: 15px;
+  overflow:hidden;
 }
 
 .terms{
@@ -519,6 +518,28 @@ text-align: center;
 
 
 
+table{
+  width: 95%;
+  border-collapse: collapse;
+  margin: 0 auto; 
+}
+table th, table td {
+  border: 1px solid #dddddd; 
+  padding: 2px; 
+  text-align: left; 
+  margin:2px;
+}
+table th {
+  background-color: mediumaquamarine; 
+}
+
+table tbody tr:nth-child(even) {
+  background-color: azure; 
+}
+
+table tbody tr:hover {
+  background-color: lightblue; 
+}
 
 
 
@@ -539,6 +560,9 @@ text-align: center;
 
 
 
+
+
+/* 
 
  .discover-img {
   max-width: 400px;
@@ -554,14 +578,13 @@ text-align: center;
 .discover-img h3 {
   width: 100%;
   margin: 0;
-}
-.image {
+} */
+
+/* .image {
   display: block;
-  /* width: 100%; */
-  /* height: auto; */
   border-radius: 10px;
 }
-
+ */
 .overlay {
   position: absolute;
   top: 0;
@@ -581,14 +604,21 @@ text-align: center;
   color: #FCFCFF;
   font-size: 20px;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  width:100%
 }
-.history, .event-card, .training-card, .news{
+
+
+.pricing p, .text p{
+  margin:0;
+}
+
+/* .history, .event-card, .training-card, .news{
   border-style: solid;
   border-radius: 15px;
   border-color: #4952F7;
@@ -609,7 +639,7 @@ text-align: center;
 }
 .history {
   margin-top: 10px;
-}
+} */
 
 
 
@@ -650,15 +680,17 @@ form div {
   display: block;
   padding-top: 1rem;
   color: var(--accent-color4);
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: left;
+  font-weight: bold;
 }
+
 
 form label.top input,
 form label.top select,
 form label.top textarea {
   display: block;
-  font-size: 1rem;
+  font-size: 1.5em;
   border: solid 1px var(--accent-color3);
   border-radius: 4px;
   padding: 0.75rem;
@@ -669,8 +701,10 @@ form label.top textarea {
 form label.sbs {
   display: block;
   padding: 0.5rem;
-  font-size:1.5em;
+  font-size:1.25em;
+  text-align: left;
 }
+
 
 form input.submitBtn {
   border: none;
@@ -682,7 +716,11 @@ form input.submitBtn {
   width: 98%;
   font-size:2rem;
 }
-
+.period{
+  color:#000;
+  font-size: 1em;
+  text-align: left;
+}
 form label.top input:required {
   border-left: solid 4px red;
 }

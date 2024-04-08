@@ -33,25 +33,27 @@ function createRentalCards(data) {
       text.classList.add('text')
 
       let maxPersons = document.createElement("p");
-      maxPersons.textContent = `Max Persons: ${rental.maxPersons}`;
+      maxPersons.textContent = `Max Riders: ${rental.maxPersons}`;
       text.appendChild(maxPersons);
 
   
-      let pricingDiv = document.createElement("div");
-      pricingDiv.classList.add("pricing");
+       let pricingDiv = document.createElement("div");
+       pricingDiv.classList.add("pricing");
       ["reservation", "walkIn"].forEach((type) => {
-        let typeDiv = document.createElement("div");
-        typeDiv.classList.add(type);
+      //  let typeDiv = document.createElement("div");
+      //  typeDiv.classList.add(type);
         let halfDay = document.createElement("p");
         if (type == "reservation"){
-        halfDay.textContent = `Reservation price from: $${rental.pricing[type].halfDay}`;
+        halfDay.textContent = `Reservations from: $${rental.pricing[type].halfDay}`;
         }
         else if (type == "walkIn"){
-          halfDay.textContent = `Walk-In price from: $${rental.pricing[type].halfDay}`;
+          halfDay.textContent = `Walk-Ins from: $${rental.pricing[type].halfDay}`;
 
         }
-        typeDiv.appendChild(halfDay);
-        pricingDiv.appendChild(typeDiv);
+        // typeDiv.appendChild(halfDay);
+        // pricingDiv.appendChild(typeDiv);
+
+        pricingDiv.appendChild(halfDay);
       });
       text.appendChild(pricingDiv);
   overlay.appendChild(text);
@@ -64,21 +66,66 @@ function createRentalCards(data) {
 
 
 
+  // function createTable(data) {
+  //   // Create the table element
+  //   var table = document.createElement('table');
+  
+  //   // Create the table header
+  //   var thead = document.createElement('thead');
+  //   var headerRow = document.createElement('tr');
+  //   ['Rental Model', 'Max Riders', 'Reservation Half Day', 'Reservation Full Day', 'Walk-In Half Day', 'Walk-In Full Day'].forEach(function(header) {
+  //     var th = document.createElement('th');
+  //     th.textContent = header;
+  //     headerRow.appendChild(th);
+  //   });
+  //   thead.appendChild(headerRow);
+  //   table.appendChild(thead);
+  
+  //   // Create the table body
+  //   var tbody = document.createElement('tbody');
+  //   data.rentalPricing.forEach(function(item) {
+  //     var row = document.createElement('tr');
+  //     [item.rentalModel, item.maxPersons, item.pricing.reservation.halfDay, item.pricing.reservation.fullDay, item.pricing.walkIn.halfDay, item.pricing.walkIn.fullDay].forEach(function(cellData) {
+  //       var td = document.createElement('td');
+  //       td.textContent = cellData;
+  //       row.appendChild(td);
+  //     });
+  //     tbody.appendChild(row);
+  //   });
+  //   table.appendChild(tbody);
+  
+  //   // Append the table to the body (or any other container)
+  //   dataTable.appendChild(table);
+  // }
+
+
   function createTable(data) {
     // Create the table element
     var table = document.createElement('table');
-  
-    // Create the table header
+
+    // Create the main table header
     var thead = document.createElement('thead');
-    var headerRow = document.createElement('tr');
-    ['Rental Model', 'Max Persons', 'Reservation Half Day', 'Reservation Full Day', 'Walk-In Half Day', 'Walk-In Full Day'].forEach(function(header) {
+    var mainHeaderRow = document.createElement('tr');
+    ['Rental Model', 'Max Riders', 'Reservation', 'Walk-In'].forEach(function(header) {
       var th = document.createElement('th');
       th.textContent = header;
-      headerRow.appendChild(th);
+      if (header === 'Reservation' || header === 'Walk-In') {
+        th.setAttribute('colspan', '2');
+      }
+      mainHeaderRow.appendChild(th);
     });
-    thead.appendChild(headerRow);
+    thead.appendChild(mainHeaderRow);
+
+    // Create the sub table header
+    var subHeaderRow = document.createElement('tr');
+    ['', '', 'Half Day', 'Full Day', 'Half Day', 'Full Day'].forEach(function(header) {
+      var th = document.createElement('th');
+      th.textContent = header;
+      subHeaderRow.appendChild(th);
+    });
+    thead.appendChild(subHeaderRow);
     table.appendChild(thead);
-  
+
     // Create the table body
     var tbody = document.createElement('tbody');
     data.rentalPricing.forEach(function(item) {
@@ -91,10 +138,10 @@ function createRentalCards(data) {
       tbody.appendChild(row);
     });
     table.appendChild(tbody);
-  
+
     // Append the table to the body (or any other container)
     dataTable.appendChild(table);
-  }
+}
 
   getRentals(baseUrl);
 

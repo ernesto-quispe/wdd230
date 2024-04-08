@@ -49,6 +49,18 @@
   .hero-banner{
     font-size: 2em;
   }
+
+
+
+  .verhicles-grid {
+    margin: auto;
+    padding: 20px 0;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+  }
   
   /* .businesses {
     display: grid;
@@ -164,30 +176,8 @@
 }
 
 
-
-
 table{
-  width: 80%;
-  border-collapse: collapse;
-  margin: 0 auto; 
+  width:85%;
 }
-table th, table td {
-  border: 1px solid #dddddd; 
-  padding: 6px; 
-  text-align: left; 
-}
-table th {
-  background-color: mediumaquamarine; 
-}
-
-table tbody tr:nth-child(even) {
-  background-color: azure; 
-}
-
-table tbody tr:hover {
-  background-color: lightblue; 
-}
-
-
 
 }

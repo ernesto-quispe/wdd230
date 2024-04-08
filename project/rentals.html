@@ -17,13 +17,16 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/aiGenerated/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="images/aiGenerated/favicon_io/site.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preload" href="styles/base.css" as="style">
+  <link rel="preload" href="styles/medium.css" as="style">
+  <link rel="preload" href="styles/larger.css" as="style">
+
+
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <link rel="preload" href="styles/base.css" as="style">
-  <link rel="preload" href="styles/medium.css" as="style">
-  <link rel="preload" href="styles/larger.css" as="style">
+
 </head>
 
 <body>
@@ -49,11 +52,18 @@
     <main>
       <div id="hero-rentals">
         <div id="hero-rentals-box">
-          <img
+          <!-- <img
             id="hero-rentals-img"
-            src="images/cozumel/originals/9e.jpg"
+            src="images/cozumel/beach-rentals-hero.webp"
             alt="Conzumel beach"
-          />
+          /> -->
+          <picture>
+            <source srcset="images/cozumel/beach-rentals-hero-800.webp" media="(max-width: 860px)">
+            <img id="hero-rentals-img" src="images/cozumel/beach-rentals-hero.webp" loading="lazy" alt="Conzumel beach">
+          </picture>
+
+
+
         </div>
       </div>
 
@@ -200,7 +210,7 @@
 
     <script src="../scripts/getdates.js"></script>
     <script src="../scripts/menu.js"></script>
-    <script src="scripts/slider.js"></script>
-    <script src="scripts/lastVisit.js"></script>
+    <!-- <script src="scripts/slider.js"></script> -->
+    <!-- <script src="scripts/lastVisit.js"></script> -->
   </body>
 </html>
