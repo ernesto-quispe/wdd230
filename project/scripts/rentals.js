@@ -1,18 +1,21 @@
 const baseUrl = "https://ernesto-quispe.github.io/wdd230/project/data/pricing.json";
 //const baseUrl = "./data/pricing.json";
-const verhiclesGrid = document.querySelector(".verhicles-grid");
-const dataTable = document.querySelector(".dataTable");
-dataTable.innerHTML = ""
-verhiclesGrid.innerHTML = ""
+
+//const dataTable = document.querySelector(".dataTable");
+//dataTable.innerHTML = ""
+
 async function getRentals(baseUrl) {
     const response = await fetch(baseUrl);
     const data = await response.json();
     createRentalCards(data);
-    createTable(data);
+    //createTable(data);
+    fillTable(data);
   }
 
 
 function createRentalCards(data) {
+  const verhiclesGrid = document.querySelector(".verhicles-grid");
+verhiclesGrid.innerHTML = ""
     data.rentalPricing.forEach((rental) => {
       let card = document.createElement("article");
       card.classList.add("vehicle");
@@ -23,6 +26,7 @@ function createRentalCards(data) {
       img.src = `images/rentals/${rental.type}/${rental.image}`;
       
       img.alt = rental.Model
+
       card.appendChild(img);
         
       let title = document.createElement("h3");
@@ -101,48 +105,68 @@ function createRentalCards(data) {
   // }
 
 
-  function createTable(data) {
-    // Create the table element
-    var table = document.createElement('table');
+//   function createTable(data) {
+//     // Create the table element
+//     var table = document.createElement('table');
 
-    // Create the main table header
-    var thead = document.createElement('thead');
-    var mainHeaderRow = document.createElement('tr');
-    ['Rental Model', 'Max Riders', 'Reservation', 'Walk-In'].forEach(function(header) {
-      var th = document.createElement('th');
-      th.textContent = header;
-      if (header === 'Reservation' || header === 'Walk-In') {
-        th.setAttribute('colspan', '2');
-      }
-      mainHeaderRow.appendChild(th);
-    });
-    thead.appendChild(mainHeaderRow);
+//     // Create the main table header
+//     var thead = document.createElement('thead');
+//     var mainHeaderRow = document.createElement('tr');
+//     ['Rental Model', 'Max Riders', 'Reservation', 'Walk-In'].forEach(function(header) {
+//       var th = document.createElement('th');
+//       th.textContent = header;
+//       if (header === 'Reservation' || header === 'Walk-In') {
+//         th.setAttribute('colspan', '2');
+//       }
+//       mainHeaderRow.appendChild(th);
+//     });
+//     thead.appendChild(mainHeaderRow);
 
-    // Create the sub table header
-    var subHeaderRow = document.createElement('tr');
-    ['', '', 'Half Day', 'Full Day', 'Half Day', 'Full Day'].forEach(function(header) {
-      var th = document.createElement('th');
-      th.textContent = header;
-      subHeaderRow.appendChild(th);
-    });
-    thead.appendChild(subHeaderRow);
-    table.appendChild(thead);
+//     // Create the sub table header
+//     var subHeaderRow = document.createElement('tr');
+//     ['', '', 'Half Day', 'Full Day', 'Half Day', 'Full Day'].forEach(function(header) {
+//       var th = document.createElement('th');
+//       th.textContent = header;
+//       subHeaderRow.appendChild(th);
+//     });
+//     thead.appendChild(subHeaderRow);
+//     table.appendChild(thead);
 
-    // Create the table body
-    var tbody = document.createElement('tbody');
-    data.rentalPricing.forEach(function(item) {
+//     // Create the table body
+//     var tbody = document.createElement('tbody');
+//     data.rentalPricing.forEach(function(item) {
+//       var row = document.createElement('tr');
+//       [item.rentalModel, item.maxPersons, item.pricing.reservation.halfDay, item.pricing.reservation.fullDay, item.pricing.walkIn.halfDay, item.pricing.walkIn.fullDay].forEach(function(cellData) {
+//         var td = document.createElement('td');
+//         td.textContent = cellData;
+//         row.appendChild(td);
+//       });
+//       tbody.appendChild(row);
+//     });
+//     table.appendChild(tbody);
+
+//     // Append the table to the body (or any other container)
+//     dataTable.appendChild(table);
+// }
+
+
+function fillTable(data) {
+  // Get the table body
+  var tbody = document.querySelector('#dataTable tbody');
+
+  // Clear the table body
+  tbody.innerHTML = '';
+
+  // Fill the table body
+  data.rentalPricing.forEach(function(item) {
       var row = document.createElement('tr');
       [item.rentalModel, item.maxPersons, item.pricing.reservation.halfDay, item.pricing.reservation.fullDay, item.pricing.walkIn.halfDay, item.pricing.walkIn.fullDay].forEach(function(cellData) {
-        var td = document.createElement('td');
-        td.textContent = cellData;
-        row.appendChild(td);
+          var td = document.createElement('td');
+          td.textContent = cellData;
+          row.appendChild(td);
       });
       tbody.appendChild(row);
-    });
-    table.appendChild(tbody);
-
-    // Append the table to the body (or any other container)
-    dataTable.appendChild(table);
+  });
 }
 
   getRentals(baseUrl);
