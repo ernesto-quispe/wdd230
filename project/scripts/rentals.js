@@ -14,7 +14,7 @@ async function getRentals(baseUrl) {
 
 
 function createRentalCards(data) {
-  const verhiclesGrid = document.querySelector(".verhicles-grid");
+  const verhiclesGrid = document.querySelector(".vehicles-grid");
 verhiclesGrid.innerHTML = ""
     data.rentalPricing.forEach((rental) => {
       let card = document.createElement("article");
@@ -23,8 +23,8 @@ verhiclesGrid.innerHTML = ""
 
   
       let img = document.createElement("img");
-      img.src = `images/rentals/${rental.type}/${rental.image}-250.webp`;
-      
+      img.src = `images/rentals/${rental.type}/${rental.image}-500.webp`;
+      img.setAttribute("loading","lazy");
       img.alt = rental.Model
 
       card.appendChild(img);

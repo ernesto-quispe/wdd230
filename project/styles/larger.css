@@ -39,4 +39,30 @@
     text-align: justify;
     line-height: 1.5em;
   }
+
+  .vehicles-grid {
+    margin: auto;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+  }
+
+
+  .itemsDiv{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  
+  .itemsDiv ul li {
+    padding: 2px;
+    margin: 0;
+  }
+
+
+
 }
