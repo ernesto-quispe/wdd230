@@ -12,7 +12,6 @@
   --accent-color5: brown;
   --accent-color6: #0a0a0a;
 }
-
 h1,
 h2,
 h3,
@@ -21,30 +20,125 @@ h5,
 h6 {
   font-family: var(--heading-font);
 }
-
 p,
 a,
 div {
   font-family: var(--paragraph-font);
 }
-
+* {
+  box-sizing: border-box;
+}
+/************************************************************** 
+                      INDEX 
+**************************************************************/
 h1 {
   font-size: 2rem;
   padding: 10px;
   color: var(--accent-color5);
 }
-
 header {
   background-color: var(--accent-color1);
   margin: auto;
-  /**/
   padding: 0;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  padding: 10px;
+}
 .active {
   text-decoration: underline;
 }
+/* Hamburger Menu*/
+#menu {
+  font-size: 2.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 0;
+  margin: 0;
+}
+#menu::before {
+  content: "☰";
+}
+#menu.open::before {
+  content: "❌";
+}
+.open {
+  display: flex;
+  flex-direction: column;
+}
+/*---------------*/
+/* Slideshow Gallery*/
+.container {
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev {
+  left: 5%;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 5%;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/*---------------*/
+/*Section img conzumel*/
+.cozumel-container {
+  margin: auto;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
+.cozumel-container picture {
+  position: relative;
+  margin: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0;
+}
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+}
+/*---------------*/
 nav {
   display: none;
   background-color: var(--accent-color1);
@@ -53,33 +147,25 @@ nav {
   padding: 10px;
   text-align: center;
 }
-
 nav a {
   color: var(--accent-color6);
   padding: 10px;
   text-decoration: none;
   font-size: 1.5rem;
 }
-
 nav a:visited {
   color: var(--accent-color6);
 }
-
 nav a:hover {
   color: #BB1B1B;
 }
-
 .hero a {
   color: var(--accent-color6);
   text-decoration: none;
 }
-
 .hero a:visited {
   color: var(--accent-color6);
 }
-
-
-
 main {
   width: 100%;
   margin: auto;
@@ -87,22 +173,16 @@ main {
   justify-self: center;
   text-align: center;
 }
-
-/* .hero-banner{
-  font-size: 1.5em;
-} */
-
 h3 {
   background-color: var(--accent-color2);
   color: var(--main-txt-color2);
   margin: 0;
   padding: 10px;
 }
-
 footer{
   background-color: var(--accent-color2); 
-  padding: 25px 50px;
-  margin-top: 200px;
+  margin: auto;
+  margin-top: 100px; 
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -122,143 +202,20 @@ footer p a:hover {
 footer .social img{
   padding-top: 15px;
 } 
-
 .social-media img {
   width: 40px;
 }
+/************************************************************** 
+                      RENTALS 
+**************************************************************/
+/************************************************************** 
+                      RESERVATIONS 
+**************************************************************/
 
+/************************************************************** 
+                      CONTACT 
+**************************************************************/
 
-
-/* small view navigation */
-#menu {
-  font-size: 2.5rem;
-  border: 0;
-  background: none;
-  color: #000;
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  padding: 0;
-  margin: 0;
-}
-
-#menu::before {
-  content: "☰";
-}
-
-#menu.open::before {
-  content: "❌";
-}
-
-.open {
-  display: flex;
-  flex-direction: column;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-p {
-  padding: 10px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Slideshow container */
-
-* {
-  box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.cozumel-container {
-  margin: auto;
-  margin-bottom: 5px;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.cozumel-container picture {
-  position: relative;
-  margin: 0;
-  border-radius: 5px;
-  overflow: hidden;
-  padding: 0;
-
-}
-
-.text-overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  margin: 0;
-  z-index: 1;
-}
-
-/* Position the "next button" to the right */
-.prev {
-  left: 5%;
-  border-radius: 3px 0 0 3px;
-}
-
-.next {
-  right: 5%;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* Container for image text */
 .caption-container {
@@ -649,136 +606,43 @@ form label.top input:required:valid {
 
 /* CONTACT */
 
-.contactus-msg{
-  background-color: var(--accent-color1);
-  box-shadow: 0 15px 20px #999; 
-  color: #1C1C1C;
-  border-color: #1C1C1C;
-  border-radius: 15px;
-  border-style: solid;
-  max-width: 90%;
-  text-align: left;
-  padding: 15px;
-  font-size: 1.25em;
-}
-.contactus-msg h2{
-   color: #1C1C1C;
-   text-align: center;
-}
-.contactus-grid {
-  margin: auto;
-  max-width: 1400px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
-  justify-items: center;
-  background-color :rgba(252, 252, 255);
-  padding-bottom: 30px;
+.contactus-grid{
+  display: block;
+
 }
 .content-map{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto auto;
+}
+.mapouter{
+  max-width: 100%;
   grid-column: 1/3;
   grid-row: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(7, 75px);
-  margin-bottom: 25px;
-}
-.mapouter {
-  text-align: center;
-  position: relative;
-  grid-column: 1/3;
-  grid-row: 1/8;
 }
 .map{
-  width: 1400px;
-  height: 450px; 
-  border:0;
-}
-.card-phone {
-  padding: 5px;
-  /* margin: 10px;  */
-  margin: auto;
-  box-shadow: 0 15px 20px #999; 
-  text-align: center;
-  position: relative;
-  border-radius: 15px;
-  background-color: #FEFEFF;
-  width: 150px;
-  height: 150px;
-  grid-column: 1;
-  grid-row: 6/8;
-  position: relative;
-}
-.card-calendar {
-  padding: 5px;
-  /* margin: 10px;  */
-  margin: auto;
-  box-shadow: 0 15px 20px #999; 
-  text-align: center;
-  position: relative;
-  border-radius: 15px;
-  background-color: #FEFEFF;
-  width: 150px;
-  height: 150px;
-  grid-column: 2;
-  grid-row: 6/8;
-  position: relative;
-}
-.card-phone:hover .overlay, .card-calendar:hover .overlay {
-  opacity: 1;
-}
-
-.myForm {
-  padding: 5px;
-  box-shadow: 0 15px 20px #999; 
-  text-align: center;
-  position: relative;
-  width: 90%;
-  background-color: var(--accent-color1);
-  color: #1C1C1C;
-  border-color: #1C1C1C;
-  border-radius: 15px;
-  border-style: solid;
-  font-size: 1.25em;
-}
-.card-phone .overlay .text {
-  width: 100%;
-}
-.myForm ul{
-  list-style: none;
-  margin: 0;
-  margin-top: 15px;
-  padding: 0;
-}
-.label-form{
-  display: inline-block;
-  text-align: right;
-  width: 90px;
-}
-
-input[type=text], input[type=email], textarea{ 
-  width: 80%;
-  margin: 5px;
-  /* padding: 5px; */
-  font-size: 1.25em;
+  max-width: 100%;
 }
 textarea{
-  vertical-align: top;
+ max-width: 80%; 
+ font-size: 1.5em;
 }
-button{
-  background-color: maroon;
-  color: var(--main-txt-color);
-  padding: 10px;
+.myForm{
+  max-width: 88%;
+  margin: auto;
+  margin-top: 10px;
+}
+input{
   font-size: 1em;
-  margin: 10px;
 }
-button:hover{
-  color: #FFCC00;
+.card-phone{
+  margin: auto;
+  grid-row: 2;
 }
-#feedback{
-  display: none;
+.card-calendar{
+  margin: auto;
+  grid-row: 2;
+}
+.label-form{
   text-align: center;
-  grid-column: 2;
-  background-color: #FFCC00;
-  padding: 7px;
 }

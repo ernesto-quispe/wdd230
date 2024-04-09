@@ -48,21 +48,153 @@
     grid-gap: 1em;
     justify-items: center;
   }
-
-
   .itemsDiv{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
   }
-
-  
   .itemsDiv ul li {
     padding: 2px;
     margin: 0;
   }
 
+
+
+
+  .contactus-msg{
+    background-color: var(--accent-color1);
+    box-shadow: 0 15px 20px #999; 
+    color: #1C1C1C;
+    border-color: #1C1C1C;
+    border-radius: 15px;
+    border-style: solid;
+    max-width: 90%;
+    text-align: left;
+    padding: 15px;
+    font-size: 1.25em;
+  }
+  .contactus-msg h2{
+     color: #1C1C1C;
+     text-align: center;
+  }
+  .contactus-grid {
+    margin: auto;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+    background-color :rgba(252, 252, 255);
+    padding-bottom: 30px;
+  }
+  .content-map{
+    grid-column: 1/3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 75px);
+    margin-bottom: 25px;
+  }
+  .mapouter {
+    text-align: center;
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 1/8;
+  }
+  .map{
+    width: 1400px;
+    height: 450px; 
+    border:0;
+  }
+  .card-phone {
+    padding: 5px;
+    /* margin: 10px;  */
+    margin: auto;
+    box-shadow: 0 15px 20px #999; 
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    background-color: #FEFEFF;
+    width: 150px;
+    height: 150px;
+    grid-column: 1;
+    grid-row: 6/8;
+    position: relative;
+  }
+  .card-calendar {
+    padding: 5px;
+    /* margin: 10px;  */
+    margin: auto;
+    box-shadow: 0 15px 20px #999; 
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    background-color: #FEFEFF;
+    width: 150px;
+    height: 150px;
+    grid-column: 2;
+    grid-row: 6/8;
+    position: relative;
+  }
+  .card-phone:hover .overlay, .card-calendar:hover .overlay {
+    opacity: 1;
+  }
+  
+  .myForm {
+    padding: 5px;
+    box-shadow: 0 15px 20px #999; 
+    text-align: center;
+    position: relative;
+    width: 90%;
+    background-color: var(--accent-color1);
+    color: #1C1C1C;
+    border-color: #1C1C1C;
+    border-radius: 15px;
+    border-style: solid;
+    font-size: 1.25em;
+  }
+  .card-phone .overlay .text {
+    width: 100%;
+  }
+  .myForm ul{
+    list-style: none;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+  }
+  .label-form{
+    display: inline-block;
+    text-align: right;
+    width: 90px;
+  }
+  
+  input[type=text], input[type=email], textarea{ 
+    width: 80%;
+    margin: 5px;
+    /* padding: 5px; */
+    font-size: 1.25em;
+  }
+  textarea{
+    vertical-align: top;
+  }
+  button{
+    background-color: maroon;
+    color: var(--main-txt-color);
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+  }
+  button:hover{
+    color: #FFCC00;
+  }
+  #feedback{
+    display: none;
+    text-align: center;
+    grid-column: 2;
+    background-color: #FFCC00;
+    padding: 7px;
+  }
 
 
 }

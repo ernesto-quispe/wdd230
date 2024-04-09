@@ -41,27 +41,28 @@
           <a href="links.html" class="navLinks">Links</a>
         </nav>
       </header>
-      <div id="hero-rentals">
-        <div id="hero-rentals-box">
-          <!-- <img
-              id="hero-rentals-img"
-              src="images/cozumel/beach-rentals-hero.webp"
-              alt="Conzumel beach"
-            /> -->
-          <picture>
-            <source srcset="images/cozumel/beach-rentals-hero-800.webp" media="(max-width: 860px)">
-            <img id="hero-rentals-img" src="images/cozumel/banner-contact.jpg" alt="Conzumel beach">
-          </picture>
-        </div>
-      </div>
-
       <main>
+        <div id="hero-rentals">
+          <div id="hero-rentals-box">
+            <!-- <img
+                id="hero-rentals-img"
+                src="images/cozumel/beach-rentals-hero.webp"
+                alt="Conzumel beach"
+              /> -->
+            <picture>
+              <source srcset="images/cozumel/beach-rentals-hero-800.webp" media="(max-width: 860px)">
+              <img id="hero-rentals-img" src="images/cozumel/banner-contact.jpg" alt="Conzumel beach">
+            </picture>
+          </div>
+        </div>
+
+
         <div class="contactus-grid">
 
           <div class="content-map">
 
             <div class="mapouter">
-              <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1J8ESOuOVvY1Wb9l2vw8N2JkywKvGaVw&ehbc=2E312F" width="640" height="540" ></iframe>
+              <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1J8ESOuOVvY1Wb9l2vw8N2JkywKvGaVw&ehbc=2E312F"></iframe>
             </div>
 
             <div class="card-phone">
@@ -143,44 +144,7 @@
         </div>
       </footer>
       <script src="../scripts/getdates.js"></script>
+      <script src="scripts/feedback.js"></script>
     <!-- </div> -->
-
-
-
-          <!-- Script to emulate backend behavior -->
-      <script>
-        // get the feedback div element so we can do something with it. <div id="feedback"></div>
-        const feedbackElement = document.getElementById('feedback');
-
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function (e) {
-
-            e.preventDefault(); // stop the form from doing the default action
-
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. 
-            // Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello ' + formElement.name.value + '! Thank you for your message. We will get back with you as soon as possible!';
-
-            feedbackElement.style.display = "block"; // make the feedback element visible.
-
-            document.body.classList.toggle('moveDown'); // add a class to move everything down so our message doesn't cover it.
-            setTimeout(function(){
-              feedbackElement.style.display = "none";
-              formElement.reset();
-            },5000)
-            
-        });
-        // Scroll document to top
-        // Ref: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-        function scrollTop() {
-          // This line makeit work on Safari
-          document.body.scrollTop = 0;
-          // This line make it work on Firefox, Chrome, Edge, and Opera
-          document.documentElement.scrollTop = 0;
-        }
-  </script>
   </body>
 </html>
