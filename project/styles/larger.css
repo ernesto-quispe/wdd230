@@ -5,7 +5,8 @@
   nav,
   footer {
     max-width: 90%;
-
+    flex-direction: row;
+    justify-content: space-around;
   }
   .rentals {
     display: grid;

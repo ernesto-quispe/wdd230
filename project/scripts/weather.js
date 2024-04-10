@@ -14,7 +14,6 @@ const cards = document.querySelector("#forecast");
 
 async function apiFetch(lat, lon, endpoint, units='imperial') {
   const url = `${baseUrl}${endpoint}?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
-  //console.log(url);
   try {
     const response = await fetch(url);
     if (!response.ok) throw Error(await response.text());
@@ -31,7 +30,6 @@ async function apiFetch(lat, lon, endpoint, units='imperial') {
 
 
 function displayCurrentWeather(data) {
-console.log(data)
   //display the weather icon, temperature and current weather status
   highTemp[0].textContent = `High today: ${Math.round(data.main.temp_max)}°F`;
   highTemp[1].textContent = `High today: ${Math.round(data.main.temp_max)}°F`;

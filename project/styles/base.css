@@ -208,12 +208,20 @@ p {
 }
 
 .cozumel-container picture {
+  margin: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.cozumel-container div {
   position: relative;
   margin: 0;
   border-radius: 5px;
   overflow: hidden;
   padding: 0;
 }
+
 .text-overlay {
   position: absolute;
   bottom: 0;
@@ -308,7 +316,7 @@ footer{
   margin: auto;
   margin-top: 100px; 
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
 }
 footer a{
@@ -316,7 +324,10 @@ footer a{
   text-decoration: none;
 }
 footer p {
-  font-size: 1.2em;
+  margin:0;
+  line-height: 1em;
+  padding:5px;
+  font-size: 1.5em;
   color: var(--main-txt-color2);
 }  
 footer p a:hover {
