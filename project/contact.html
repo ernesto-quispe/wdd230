@@ -1,150 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Scooter Rental">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ernesto-quispe.github.io/wdd230/project/images/cozumelName.jpg">
-    <meta property="og:url" content="https://ernesto-quispe.github.io/wdd230/project">
-    <title>Scooter Rental</title>
-    <meta name="description" content="Ernesto Quispe | WDD 230 - Final Proyect | Scooter Contact">
-    <meta name="author" content="Ernesto Quispe">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/aiGenerated/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/aiGenerated/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/aiGenerated/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="images/aiGenerated/favicon_io/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preload" href="styles/base.css" as="style">
-    <link rel="preload" href="styles/medium.css" as="style">
-    <link rel="preload" href="styles/larger.css" as="style">
-  </head>
-  <body>
-    <!-- <div id="content"> -->
-      <header>
-        <a id="logo_link" href="index.html">
-          <img
-            class="logo"
-            src="images/logo-50.webp"
-            alt="Scoots Logo"
-          />
-        </a>
-        <nav>
-          <a href="index.html" class="navLinks">Home</a>
-          <a href="rentals.html" class="navLinks">Rentals</a>
-          <a href="reservations.html" class="navLinks">Reservations</a>
-          <a href="contact.html" class="navLinks active">Contact</a>
-          <a href="links.html" class="navLinks">Links</a>
-        </nav>
-      </header>
-      <main>
-        <div id="hero-rentals">
-          <div id="hero-rentals-box">
-            <!-- <img
-                id="hero-rentals-img"
-                src="images/cozumel/beach-rentals-hero.webp"
-                alt="Conzumel beach"
-              /> -->
-            <picture>
-              <source srcset="images/cozumel/beach-rentals-hero-800.webp" media="(max-width: 860px)">
-              <img id="hero-rentals-img" src="images/cozumel/banner-contact.jpg" alt="Conzumel beach">
-            </picture>
-          </div>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Scooter Rental">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ernesto-quispe.github.io/wdd230/project/images/cozumelName.jpg">
+  <meta property="og:url" content="https://ernesto-quispe.github.io/wdd230/project">
+  <title>Scooter Rental</title>
+  <meta name="description" content="Ernesto Quispe | WDD 230 - Final Proyect | Scooter Contact">
+  <meta name="author" content="Ernesto Quispe">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/aiGenerated/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/aiGenerated/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/aiGenerated/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="images/aiGenerated/favicon_io/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preload" href="styles/base.css" as="style">
+  <link rel="preload" href="styles/medium.css" as="style">
+  <link rel="preload" href="styles/larger.css" as="style">
+</head>
+
+<body>
+  <header>
+    <div id="logoDiv">
+      <img src="images/logo-50.webp" alt="Scoots Logo">
+    </div>
+    <button id="menu" aria-label="menu button"></button>
+    <!-- Rounded switch -->
+    <!-- <label class="switch">
+        <input type="checkbox" id="toggleCheckbox">
+        <span class="slider round"></span>
+      </label> -->
+    <nav class="navigation">
+      <a href="index.html" class="navLinks">Home</a>
+      <a href="rentals.html" class="navLinks">Rentals</a>
+      <a href="reservations.html" class="navLinks">Reservations</a>
+      <a href="contact.html" class="navLinks active">Contact</a>
+      <a href="links.html" class="navLinks">Links</a>
+    </nav>
+  </header>
+  <main>
+    <picture>
+      <source srcset="images/cozumel/banner-contact-1700x720.webp" media="(max-width: 860px)">
+      <img id="hero-rentals-img" src="images/cozumel/banner-contact-1700x720.webp" alt="Conzumel beach">
+    </picture>
 
 
-        <div class="contactus-grid">
 
-          <div class="content-map">
+    <div class="contactus-grid">
 
-            <div class="mapouter">
+      <div class="content-map">
+
+        <div class="mapouter">
               <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1J8ESOuOVvY1Wb9l2vw8N2JkywKvGaVw&ehbc=2E312F"></iframe>
             </div>
 
-            <div class="card-phone">
-              <img
-                id="phone-img"
-                src="images/rsz_2phone_4307.png"
-                alt="Black phone"
-              />
-              <div class="overlay">
-                 <div class="text">+562 2654 3570</div>
-              </div>   
-            </div>
-
-            <div class="card-calendar">
-              <img
-                id="calendar-img"
-                src="images/organizer_calendar_clock_pencil_10047.png"
-                alt="Calendar with pencil and clock"
-              />
-              <div class="overlay">
-                  <div class="text">Monday to Friday from 08:30 a.m. to 2:00 p.m.</div>
-             </div>   
-            </div>
+        <div class="card-phone">
+          <img id="phone-img" src="images/rsz_2phone_4307.webp" alt="Black phone" />
+          <div class="overlay">
+            <div class="text">+562 2654 3570</div>
           </div>
+        </div>
 
-          <section class="contactus-msg">
-            <h2>Contact Us</h2>
-            <p>
-              We have a series of services focused directly on attending and
-              solving the presentations, requests, and claims made by the
-              residents and users of the commune. We provide information of a
-              communal and municipal nature that is not of an emergency or
-              urgent nature, but that does require municipal management in the
-              territory of the commune. Our Neighborhood Assistance Department
-              (DAV) is the only channel that ensures residents an effective and
-              official response from the municipality in a short period of time.
-              Its main function is to ensure a timely response to the residents.
-            </p>
-          </section>
-          <div class="myForm">
-            <form action="POST">
-              <ul>
-                <li>
-                  <label class="label-form" for="name">Name:</label>
-                  <input type="text" id="name" name="user_name" placeholder="Full name" required/>
-                </li>
-                <li>
-                  <label class="label-form" for="mail">Email:</label>
-                  <input type="email" id="mail" name="user_email" placeholder="username@domain.com" required/>
-                </li>
-                <li> 
-                </li>
-                <li>
-                  <label class="label-form" for="msg">Message:</label>
-                  <textarea name="user_message" id="msg" rows="5" placeholder="Your message" required></textarea>
-                </li>
-                <li>
-                  <button type="submit">Send your message</button>
-                </li>
-              </ul>
-            </form>
+        <div class="card-calendar">
+          <img id="calendar-img" src="images/organizer_calendar_clock_pencil_10047.webp"
+            alt="Calendar with pencil and clock" />
+          <div class="overlay">
+            <div class="text">Monday to Friday from 08:30 a.m. to 2:00 p.m.</div>
           </div>
-            <div id="feedback"></div>
         </div>
-      </main>
+      </div>
 
-      <footer>
-        <p>Scoots &copy; <span id="copywriteyear">Year </span> - Ernesto Quispe</p>
-        <p id="lastmod"></p>
-        <p><a href="contact.html">Contact Us</a></p>
-        <div class="social">
-          <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png" alt="fb icon" />
-          </a>
+      <section class="contactus-msg">
+        <h1>Contact Us</h1>
+        <h2>Main location:</h2>
+        <ul>
+          <li>
+            123 Avenida Rafael E. Melgar, Cozumel, Quintana Roo, Mexico 77600
+          </li>
+          <li>
+            +52 987 654 3210
+          </li>
+        </ul>
+        <h2>Sister location:</h2>
+        <ul>
+          <li>
+            456 Calle 10 Norte, Cozumel, Quintana Roo, Mexico 77620
+          </li>
+          <li>
+            +52 987 654 3210
+          </li>
+        </ul>
+        <hr>
+        <ul>
+          <li>
+            contact@scoots.mx
+          </li>
+        </ul>
+      </section>
+      <div class="myForm">
+        <form action="POST">
+          <ul>
+            <li>
+              <label class="label-form" for="name">Name:</label>
+              <input type="text" id="name" name="user_name" placeholder="Full name" required />
+            </li>
+            <li>
+              <label class="label-form" for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" placeholder="username@domain.com" required />
+            </li>
+            <li>
+            </li>
+            <li>
+              <label class="label-form" for="msg">Message:</label>
+              <textarea name="user_message" id="msg" rows="5" placeholder="Your message" required></textarea>
+            </li>
+            <li>
+              <button type="submit">Send your message</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div id="feedback"></div>
+    </div>
+  </main>
 
-          <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram.png" alt="instagram icon" />
-          </a>
-        </div>
-      </footer>
-      <script src="../scripts/getdates.js"></script>
-      <script src="scripts/feedback.js"></script>
-    <!-- </div> -->
-  </body>
+  <footer>
+    <p>Scoots &copy; <span id="copywriteyear">Year </span> - Ernesto Quispe</p>
+    <p id="lastmod"></p>
+    <p><a href="contact.html">Contact Us</a></p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.webp" alt="fb icon" />
+      </a>
+
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.webp" alt="instagram icon" />
+      </a>
+    </div>
+  </footer>
+  <script src="../scripts/getdates.js"></script>
+  <script src="../scripts/menu.js"></script>
+  <script src="scripts/feedback.js"></script>
+</body>
+
 </html>

@@ -51,6 +51,16 @@ p {
 .active {
   text-decoration: underline;
 }
+/* Hero banner*/
+.hero-index {
+  margin: 10px auto;
+  position: relative;
+}
+.hero-index img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 /* Hamburger Menu*/
 #menu {
   font-size: 2.5rem;
@@ -62,6 +72,7 @@ p {
   right: 10px;
   padding: 0;
   margin: 0;
+  z-index:2;
 }
 #menu::before {
   content: "☰";
@@ -73,7 +84,58 @@ p {
   display: flex;
   flex-direction: column;
 }
+/*Weather Banner*/
+#weather-banner {
+  text-align: center;
+  background-color: var(--accent-color2);
+  color: var(--main-txt-color2);
+  font-size: 1.5rem;
+  margin: 0;
+}
+#weather-banner p {
+  margin: 0;
+}
+/*Clean weather message*/
+.displayed {
+  display: none;
+}
 /*---------------*/
+/*Button Join*/
+.button-join {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.button-join span {
+  padding: 10px;
+  font-size: 3rem;
+  background-color: maroon;
+  color: white;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: goldenrod;
+  cursor: pointer;
+  z-index: 1;
+}
+.button-join span:hover {
+  background-color: darkgreen;
+}
+/*---------------*/
+.rentals {
+  display: flex;
+  flex-direction: column;
+}
+.information p {
+  font-size: 1em;
+  background-color: var(--accent-color1);
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  height: auto;
+  text-align: justify;
+}
 /* Slideshow Gallery*/
 .container {
   position: relative;
@@ -112,6 +174,30 @@ p {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 16.66%;
+}
+.demo {
+  opacity: 0.6;
+  width: 100%;
+  height: auto;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
 /*---------------*/
 /*Section img conzumel*/
 .cozumel-container {
@@ -139,6 +225,9 @@ p {
   z-index: 1;
 }
 /*---------------*/
+#logoDiv {
+  max-width: 60px ;
+}
 nav {
   display: none;
   background-color: var(--accent-color1);
@@ -179,6 +268,44 @@ h3 {
   margin: 0;
   padding: 10px;
 }
+/* weather block*/
+#weather {
+  margin: auto;
+  display: inline-block;
+}
+.weatherDiv {
+  margin: auto;
+}
+.weatherDiv h4 {
+  display: inline;
+}
+.current {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  margin: 5px;
+}
+#forecast h4 {
+  background-color: var(--accent-color2);
+  color: var(--main-txt-color2);
+  font-size: 2em;
+  display: block;
+  margin: 0;
+}
+#forecast p {
+  padding: 5px;
+  margin: 5px;
+}
+.forecast-card {
+  border-style: solid;
+  margin: 2px;
+}
+/*---------------*/
 footer{
   background-color: var(--accent-color2); 
   margin: auto;
@@ -208,180 +335,15 @@ footer .social img{
 /************************************************************** 
                       RENTALS 
 **************************************************************/
-/************************************************************** 
-                      RESERVATIONS 
-**************************************************************/
-
-/************************************************************** 
-                      CONTACT 
-**************************************************************/
-
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-  width: 100%;
-  height: auto;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-.rentals {
-  display: flex;
-  flex-direction: column;
-}
-
-.information p {
-  font-size: 1em;
-  background-color: var(--accent-color1);
-  margin: 5px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  height: auto;
-  text-align: justify;
-}
-
-
-
-.displayed {
-  display: none;
-}
-
-#meetbanner {
-  text-align: center;
-  background-color: var(--accent-color2);
-  color: var(--main-txt-color2);
-  font-size: 1.5rem;
-  margin: 0;
-  /*padding: 10px;*/
-}
-
-#meetbanner p {
-  /*display: inline;*/
-  margin: 0;
-}
-
-.hero {
-  margin: 10px auto;
-  position: relative;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-#weather {
-  margin: auto;
-  display: inline-block;
-}
-
-.weatherDiv {
-  margin: auto;
-}
-
-.weatherDiv h4 {
-  display: inline;
-}
-
-.current {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#forecast {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  margin: 5px;
-}
-
-#forecast h4 {
-  background-color: var(--accent-color2);
-  color: var(--main-txt-color2);
-  font-size: 2em;
-  display: block;
-  margin: 0;
-}
-
-#forecast p {
-  padding: 5px;
-  margin: 5px;
-}
-
-.forecast-card {
-  border-style: solid;
-  margin: 2px;
-}
-
-.button-join {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-
-}
-
-.button-join span {
-  padding: 10px;
-  font-size: 3rem;
-  background-color: maroon;
-  color: white;
-  border-radius: 15px;
-  border-style: solid;
-  border-color: goldenrod;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.button-join span:hover {
-  background-color: darkgreen;
-}
-
-
-
-
-
-
-
-/** Rentals  **/
 main h2 {
   color: var(--accent-color2);
 }
-
 .vehicles-grid {
   margin: auto;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
 }
-
 .vehicle {
   padding: 5px;
   margin: auto;
@@ -391,13 +353,10 @@ main h2 {
   background-color: #4d495e;
   border-radius: 15px;
   overflow: hidden;
-
 }
-
 .terms {
   max-width: 90%;
   margin: auto;
-
 }
 .itemsDiv{
   display:flex;
@@ -406,9 +365,6 @@ main h2 {
 }
 .itemsDiv ul {
   font-size: 1.25em;
-  /* list-style-type: none; */
-  /* padding: 0; */
-  /* padding: 5px; */
   border-style: solid;
   border-radius: 7px;
   min-height: 200px;
@@ -416,23 +372,18 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   max-width:600px;
-
 }
-
 .itemsDiv ul li {
   padding: 2px;
   margin: 0;
   text-align: left;
 }
-
-
 .image {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -443,67 +394,9 @@ main h2 {
   transition: .5s ease;
   background-color: yellow;
 }
-
 .vehicle:hover .overlay {
   opacity: 1;
 }
-
-.text {
-  color: #1C1C1C;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-
-
-
-
-
-table {
-  width: 95%;
-  border-collapse: collapse;
-  margin: 0 auto;
-}
-
-table th,
-table td {
-  border: 1px solid #dddddd;
-  padding: 2px;
-  text-align: left;
-  margin: 2px;
-}
-
-table th {
-  background-color: mediumaquamarine;
-}
-
-table tbody tr:nth-child(even) {
-  background-color: azure;
-}
-
-table tbody tr:hover {
-  background-color: lightblue;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #2242AE;
-}
-
-
 .text {
   color: #FCFCFF;
   font-size: 20px;
@@ -516,26 +409,39 @@ table tbody tr:hover {
   text-align: center;
   width: 100%
 }
-
-
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+table th,
+table td {
+  border: 1px solid #dddddd;
+  padding: 2px;
+  text-align: left;
+  margin: 2px;
+}
+table th {
+  background-color: mediumaquamarine;
+}
+table tbody tr:nth-child(even) {
+  background-color: azure;
+}
+table tbody tr:hover {
+  background-color: lightblue;
+}
 .pricing p,
 .text p {
   margin: 0;
 }
-
-
-/*----------------------------------- FORM -----------------------------------*/
-.joinus-body h1 {
-  margin: 0;
-  padding: 30px;
-}
-
+/************************************************************** 
+                      RESERVATIONS 
+**************************************************************/
 form fieldset {
   border: 1px solid var(--accent-color3);
   border-radius: 10px;
   padding: 0.5rem 2%;
 }
-
 .top,
 form div {
   display: block;
@@ -545,8 +451,6 @@ form div {
   text-align: left;
   font-weight: bold;
 }
-
-
 form label.top input,
 form label.top select,
 form label.top textarea {
@@ -558,15 +462,12 @@ form label.top textarea {
   width: 100%;
   max-width: 95%;
 }
-
 form label.sbs {
   display: block;
   padding: 0.5rem;
   font-size: 1.25em;
   text-align: left;
 }
-
-
 form input.submitBtn {
   border: none;
   background-color: var(--accent-color2);
@@ -577,38 +478,25 @@ form input.submitBtn {
   width: 98%;
   font-size: 2rem;
 }
-
 .period {
   color: #000;
   font-size: 1em;
   text-align: left;
 }
-
 form label.top input:required {
   border-left: solid 4px red;
 }
-
 form label.top input:required:valid {
   border-left: solid 4px green;
 }
-
 .label-form-text {
   padding-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-/* CONTACT */
-
+/************************************************************** 
+                      CONTACT 
+**************************************************************/
 .contactus-grid{
   display: block;
-
 }
 .content-map{
 display: grid;
@@ -645,4 +533,13 @@ input{
 }
 .label-form{
   text-align: center;
+}
+.contactus-msg h1{
+  text-align: center;
+  background-color: var(--accent-color2);
+  color: var(--main-txt-color2);
+}
+.contactus-msg h2{
+  text-align: left;
+  color: #1C1C1C;
 }
