@@ -51,7 +51,7 @@
 
   .contactus-grid {
     margin: auto;
-    width: 95%;
+    max-width:1700px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
