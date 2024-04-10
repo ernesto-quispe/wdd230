@@ -50,65 +50,72 @@
     <main>
 
       <h1>Request Your Reservation</h1>
-      <form method="get" action="thankyou.html">
-        <fieldset>
-          <label class="top">Date* <input type="date" name="date" required id="date" autocomplete="date"></label>
-          <h2 class="period">Period*</h2>
-            <label for="halfday" class="sbs radio"><input type="radio" id="halfday" name="period" value="halfday"><span class="label-form-text">Half Day</span></label>
-            <label for="fullday" class="sbs radio"><input type="radio" id="fullday" name="period" value="fullday"><span class="label-form-text">Full Day</span></label>
+      <div class="container-reservations">
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <label class="top">Date* <input type="date" name="date" required id="date" autocomplete="date"></label>
+            <h2 class="period">Period*</h2>
+              <label for="halfday" class="sbs radio"><input type="radio" id="halfday" name="period" value="halfday"><span class="label-form-text">Half Day</span></label>
+              <label for="fullday" class="sbs radio"><input type="radio" id="fullday" name="period" value="fullday"><span class="label-form-text">Full Day</span></label>
+  
+            <label class="top" >Rental Type* 
+              <select name="rentaltype" id="rentaltype" required>
+                <option value="hondametro">Honda Metro Scooter</option>
+                <option value="hondadio">Honda Dio Scooter</option>
+                <option value="hondapcx150">Honda PCX150 Scooter</option>
+                <option value="hondapioneer">Honda Pioneer ATV</option>
+                <option value="jeep4door">Jeep Wrangler - 4 Door</option>
+                <option value="jeep2door">Jeep Wrangler - 2 Door</option>
+              </select>
+            </label>
+            <label class="top">Number of Vehicles* <input type="number" name="numvehicles" required id="numvehicles"></label>
+            <label class="top">Phone Number* <input type="tel" name="phone" required id="phone" autocomplete="tel"></label>
+            <label class="top">Full Name* <input type="text" name="fullname" required id="fullname" autocomplete="name"></label>
+            <label class="top">Email* <input type="email" name="email" required id="email" autocomplete="email"></label>
+            <label class="top">Home State or Country <input type="text" name="homestate" required id="homestate"></label>
+            <label class="top">Cruise Line
+              <select name="cruiseline" id="cruiseline">
+                <option value="aida">Aida</option>
+                <option value="azamara">Azamara</option>
+                <option value="carnival">Carnival</option>
+                <option value="celebrity">Celebrity</option>
+                <option value="costa">Costa</option>
+                <option value="cruiseMaritimeVoyages">Cruise & Maritime Voyages</option>
+                <option value="crystal">Crystal</option>
+                <option value="disney">Disney</option>
+                <option value="fti">FTI</option>
+                <option value="hollandAmerica">Holland America</option>
+                <option value="hurtigruten">Hurtigruten</option>
+                <option value="msc">MSC</option>
+                <option value="norwegian">Norwegian</option>
+                <option value="oceania">Oceania</option>
+                <option value="oneOcean">One Ocean</option>
+                <option value="pAndO">P&O</option>
+                <option value="phoenix">Phoenix</option>
+                <option value="plantours">Plantours</option>
+                <option value="princess">Princess</option>
+                <option value="regentSevenSeas">Regent Seven Seas</option>
+                <option value="royalCaribbean">Royal Caribbean</option>
+                <option value="seaCloud">Sea Cloud</option>
+                <option value="silversea">Silversea</option>
+                <option value="tuiMarella">TUI Marella</option>
+                <option value="tuiMeinSchiff">TUI Mein Schiff</option>
+                <option value="viking">Viking</option>
+                <option value="virgin">Virgin</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label class="top">For "Other" Please include details in field below.</label>
+            <label class="top">Special Accommodations and or Comments* <textarea name="comments" id="comments"></textarea></label>
+          </fieldset>
+          <input type="submit" value="Submit" class="submitBtn">
+        </form>
+        <div class="image-reservations">
+          <img src="images/cozumel/Cozumel-MExico-600.webp" loading="lazy" alt="Cozumel Port Sign">
+        </div>
+      </div>
 
-          <label class="top">Rental Type* 
-            <select name="rentaltype" id="rentaltype">
-              <option value="hondametro">Honda Metro Scooter</option>
-              <option value="hondadio">Honda Dio Scooter</option>
-              <option value="hondapcx150">Honda PCX150 Scooter</option>
-              <option value="hondapioneer">Honda Pioneer ATV</option>
-              <option value="jeep4door">Jeep Wrangler - 4 Door</option>
-              <option value="jeep2door">Jeep Wrangler - 2 Door</option>
-            </select>
-          </label>
-          <label class="top">Number of Vehicles* <input type="number" name="numvehicles" required id="numvehicles"></label>
-          <label class="top">Phone Number* <input type="tel" name="phone" required id="phone" autocomplete="tel"></label>
-          <label class="top">Full Name* <input type="text" name="fullname" required id="fullname" autocomplete="name"></label>
-          <label class="top">Email* <input type="email" name="email" required id="email" autocomplete="email"></label>
-          <label class="top">Home State or Country <input type="text" name="homestate" required id="homestate"></label>
-          <label class="top">Cruise Line
-            <select name="cruiseline" id="cruiseline">
-              <option value="aida">Aida</option>
-              <option value="azamara">Azamara</option>
-              <option value="carnival">Carnival</option>
-              <option value="celebrity">Celebrity</option>
-              <option value="costa">Costa</option>
-              <option value="cruiseMaritimeVoyages">Cruise & Maritime Voyages</option>
-              <option value="crystal">Crystal</option>
-              <option value="disney">Disney</option>
-              <option value="fti">FTI</option>
-              <option value="hollandAmerica">Holland America</option>
-              <option value="hurtigruten">Hurtigruten</option>
-              <option value="msc">MSC</option>
-              <option value="norwegian">Norwegian</option>
-              <option value="oceania">Oceania</option>
-              <option value="oneOcean">One Ocean</option>
-              <option value="pAndO">P&O</option>
-              <option value="phoenix">Phoenix</option>
-              <option value="plantours">Plantours</option>
-              <option value="princess">Princess</option>
-              <option value="regentSevenSeas">Regent Seven Seas</option>
-              <option value="royalCaribbean">Royal Caribbean</option>
-              <option value="seaCloud">Sea Cloud</option>
-              <option value="silversea">Silversea</option>
-              <option value="tuiMarella">TUI Marella</option>
-              <option value="tuiMeinSchiff">TUI Mein Schiff</option>
-              <option value="viking">Viking</option>
-              <option value="virgin">Virgin</option>
-              <option value="other">Other</option>
-            </select>
-          </label>
-          <label class="top">For "Other" Please include details in field below.</label>
-          <label class="top">Special Accommodations and or Comments* <textarea name="comments" id="comments"></textarea></label>
-        </fieldset>
-        <input type="submit" value="Submit" class="submitBtn">
-      </form>
+
 
 
     </main>
