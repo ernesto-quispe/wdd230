@@ -464,6 +464,25 @@ form div {
   text-align: left;
   font-weight: bold;
 }
+#reservationForm{
+position: relative;
+}
+#reservationForm::after{
+  content: "";
+  background: url("../images/cozumel/Cozumel-MExico-600.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.25; /* Adjust transparency (0 fully transparent, 1 fully opaque) */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+.image-reservations{
+  display:none;
+}
 form label.top input,
 form label.top select,
 form label.top textarea {
@@ -481,6 +500,10 @@ form label.sbs {
   font-size: 1.25em;
   text-align: left;
 }
+input[type='radio'] {
+  transform: scale(2);
+}
+
 form input.submitBtn {
   border: none;
   background-color: var(--accent-color2);

@@ -51,15 +51,16 @@
 
       <h1>Request Your Reservation</h1>
       <div class="container-reservations">
-        <form method="get" action="thankyou.html">
-          <fieldset>
-            <label class="top">Date* <input type="date" name="date" required id="date" autocomplete="date"></label>
+        <form  method="get" action="thankyou.html">
+          <fieldset id="reservationForm">
+            <label class="top">Date* <input type="date" name="date" required id="date"></label>
             <h2 class="period">Period*</h2>
               <label for="halfday" class="sbs radio"><input type="radio" id="halfday" name="period" value="halfday"><span class="label-form-text">Half Day</span></label>
               <label for="fullday" class="sbs radio"><input type="radio" id="fullday" name="period" value="fullday"><span class="label-form-text">Full Day</span></label>
   
             <label class="top" >Rental Type* 
               <select name="rentaltype" id="rentaltype" required>
+                <option value="">Vehicle</option>
                 <option value="hondametro">Honda Metro Scooter</option>
                 <option value="hondadio">Honda Dio Scooter</option>
                 <option value="hondapcx150">Honda PCX150 Scooter</option>
@@ -72,7 +73,7 @@
             <label class="top">Phone Number* <input type="tel" name="phone" required id="phone" autocomplete="tel"></label>
             <label class="top">Full Name* <input type="text" name="fullname" required id="fullname" autocomplete="name"></label>
             <label class="top">Email* <input type="email" name="email" required id="email" autocomplete="email"></label>
-            <label class="top">Home State or Country <input type="text" name="homestate" required id="homestate"></label>
+            <label class="top">Home State or Country <input type="text" name="homestate" id="homestate" autocomplete="country-name"></label>
             <label class="top">Cruise Line
               <select name="cruiseline" id="cruiseline">
                 <option value="aida">Aida</option>
@@ -128,14 +129,14 @@
       <p><a href="contact.html">Contact Us</a></p>
       <div class="social">
         <a href="https://facebook.com" target="_blank">
-          <img src="images/facebook.webp" alt="fb icon" />
+          <img src="images/facebook.webp" alt="fb icon">
         </a>
         <a href="https://instagram.com" target="_blank">
-          <img src="images/instagram.webp" alt="instagram icon" />
+          <img src="images/instagram.webp" alt="instagram icon">
         </a>
       </div>
     </footer>
-
+<script src="scripts/form-date.js"></script>
     <script src="../scripts/getdates.js"></script>
     <script src="../scripts/menu.js"></script>
   

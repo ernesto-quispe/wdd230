@@ -110,5 +110,14 @@
     border-style: solid;
   }
 
-
+  #reservationForm{
+    position:unset;
+    }
+    #reservationForm::after{
+      content: "";
+      background-image: none;
+    }
+    .image-reservations{
+      display:block;
+    }
 }
